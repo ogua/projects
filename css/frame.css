@@ -1,0 +1,103 @@
+@-webkit-keyframes desktop {
+    0%
+ { color: #12f0d5; }
+
+    25%
+ { color: #afb3bb; }
+
+    50% {
+        color: #b4982b;
+    }
+
+    75%
+{  color:blue ; }
+
+    100% {
+        color:#2e487b; }
+}
+
+@-moz-keyframes desktop {
+    0%
+ { color: #12f0d5; 
+   backface-visibility: visible;
+}
+
+    25%
+ { color: #afb3bb; }
+
+    50% {
+        color: #b4982b;
+    }
+
+    75%
+{  color:blue ; }
+
+    100% {
+       color:#2e487b; }
+}
+@-ms-keyframes desktop {
+    0%
+ { color: #12f0d5; }
+
+    25%
+ { color: #afb3bb; }
+
+    50% {
+        color: #b4982b;
+    }
+
+    75%
+{  color: blue; }
+
+    100% {
+        color:#2e487b; }
+}
+@-o-keyframes desktop {
+    0%
+ { color: #12f0d5; }
+
+    25%
+ { color: #afb3bb; }
+
+    50% {
+        color: #b4982b;
+    }
+
+    75%
+{  color: blue; }
+
+    100% {
+        color:#2e487b; }
+}
+@keyframes desktop {
+    0%
+ { color: #12f0d5; }
+
+    25%
+ { color: #afb3bb; }
+
+    50% {
+        color: #b4982b;
+    }
+
+    75%
+{  color: blue; }
+
+    100% {
+        color:#2e487b; }
+}
+.change{
+    color: #12f0d5;
+    -webkit-animation: desktop 10s infinite alternate;
+    -moz-animation: desktop 10s infinite alternate;
+    -ms-animation: desktop 10s infinite alternate;
+    animation: desktop 10s infinite alternate;
+}
+
+.nima{
+text-shadow:rgb(102,55,20)5px 10px 10px;
+border:1px solid #f3f0ea;
+padding:10px;
+width:100%;
+border-radius:10px;
+background:#f3f0ea;}

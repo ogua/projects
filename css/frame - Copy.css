@@ -1,0 +1,103 @@
+@-webkit-keyframes desktop {
+    0%
+ { -webkit-transition: -webkit-transform 4s;}
+
+    25%
+ { -webkit-transition: -webkit-transform 4s; }
+
+    50% {
+        -webkit-transition: -webkit-transform 4s;
+    }
+
+    75%
+{  -webkit-transition: -webkit-transform 4s;}
+
+    100% {
+        -webkit-transition: -webkit-transform 4s;}
+}
+
+@-moz-keyframes desktop {
+    0%
+ { -webkit-transition: -webkit-transform 4s; 
+   backface-visibility: visible;
+}
+
+    25%
+ { -webkit-transition: -webkit-transform 4s; }
+
+    50% {
+        -webkit-transition: -webkit-transform 4s;
+    }
+
+    75%
+{  -webkit-transition: -webkit-transform 4s;}
+
+    100% {
+       -webkit-transition: -webkit-transform 4s; }
+}
+@-ms-keyframes desktop {
+    0%
+ { -webkit-transition: -webkit-transform 4s;}
+
+    25%
+ { -webkit-transition: -webkit-transform 4s;}
+
+    50% {
+        -webkit-transition: -webkit-transform 4s;
+    }
+
+    75%
+{  -webkit-transition: -webkit-transform 4s;}
+
+    100% {
+        -webkit-transition: -webkit-transform 4s;}
+}
+@-o-keyframes desktop {
+    0%
+ { -webkit-transition: -webkit-transform 4s;}
+
+    25%
+ { -webkit-transition: -webkit-transform 4s;}
+
+    50% {
+        -webkit-transition: -webkit-transform 4s;
+    }
+
+    75%
+{  -webkit-transition: -webkit-transform 4s;}
+
+    100% {
+        -webkit-transition: -webkit-transform 4s;}
+}
+@keyframes desktop {
+    0%
+ { -webkit-transition: -webkit-transform 4s;}
+
+    25%
+ { -webkit-transition: -webkit-transform 4s;}
+
+    50% {
+        -webkit-transition: -webkit-transform 4s;
+    }
+
+    75%
+{  -webkit-transition: -webkit-transform 4s;}
+
+    100% {
+        -webkit-transition: -webkit-transform 4s;}
+}
+#imgs{
+    -webkit-transform:rotate(45deg);
+    -webkit-animation: desktop 10s infinite alternate;
+    -moz-animation: desktop 10s infinite alternate;
+    -ms-animation: desktop 10s infinite alternate;
+    animation: desktop 10s infinite alternate;
+}
+
+.nima{
+text-shadow:rgb(102,55,20)5px 10px 10px;
+border:1px solid #f3f0ea;
+padding:10px;
+width:100%;
+border-radius:10px;
+background:#f3f0ea;}

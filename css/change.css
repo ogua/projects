@@ -1,0 +1,95 @@
+@-webkit-keyframes desktop {
+    0%
+ { background-color: white; }
+
+    25%
+ { background-color: blue; }
+
+    50% {
+        background-color: white;
+    }
+
+    75%
+{  background-color:blue ; }
+
+    100% {
+        background-color:white; }
+}
+
+@-moz-keyframes desktop {
+    0%
+ { background-color: white; 
+   backface-visibility: visible;
+}
+
+    25%
+ { background-color: blue; }
+
+    50% {
+        background-color: white;
+    }
+
+    75%
+{  background-color:blue ; }
+
+    100% {
+       background-color:white; }
+}
+@-ms-keyframes desktop {
+    0%
+ { background-color: white; }
+
+    25%
+ { background-color: blue; }
+
+    50% {
+        background-color: white;
+    }
+
+    75%
+{  background-color: blue; }
+
+    100% {
+        background-color:white; }
+}
+@-o-keyframes desktop {
+    0%
+ { background-color: white; }
+
+    25%
+ { background-color: blue; }
+
+    50% {
+        background-color: white;
+    }
+
+    75%
+{  background-color: blue; }
+
+    100% {
+        background-color:white; }
+}
+@keyframes desktop {
+    0%
+ { background-color: white; }
+
+    25%
+ { background-color: blue; }
+
+    50% {
+        background-color: white;
+    }
+
+    75%
+{  background-color: blue; }
+
+    100% {
+        background-color:white; }
+}
+#change{
+    background-color: white;
+    -webkit-animation: desktop 10s infinite alternate;
+    -moz-animation: desktop 10s infinite alternate;
+    -ms-animation: desktop 10s infinite alternate;
+    animation: desktop 10s infinite alternate;
+}
