@@ -1,0 +1,70 @@
+.back{
+	 background-image: url("../images/index1.jpg");
+	 background-repeat: no-repeat;
+	 background-size:cover;
+ }
+.load{
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	position:absolute;
+	text-align:center;
+	height:200px;
+}
+.loadid{
+	margin-top:250px;
+}
+.loads{
+	font-weight:bold;
+	font-size:20px;
+	font-family:Tahoma;
+	display:none;
+}
+.load2{
+	font-weight:bold;
+	font-size:20px;
+	font-family:Tahoma;
+	display:none;
+}
+.load3{
+	font-weight:bold;
+	font-size:20px;
+	font-family:Tahoma;
+	display:none;
+}
+.load img{
+	display:none;
+}
+ .msgDis{
+	 top:0;
+	 left:0;
+	 bottom:0;
+	 right:0;
+	 text-align:center;
+	 margin-top:260px;
+	 position:absolute;
+	 display:none;
+ }
+ .msgDis p{
+	 color:#5cb85c;
+	 font-size:25px;
+	 font-weight:bold;
+	 font-family:Roboto;
+ }
+ .msgDiss{
+	 top:0;
+	 left:0;
+	 bottom:0;
+	 right:0;
+	 text-align:center;
+	 margin-top:260px;
+	 position:absolute;
+	 display:none;
+ }
+ .msgDiss p{
+	 color:red;
+	 font-size:25px;
+	 font-weight:bold;
+	 font-family:Roboto;
+ }
