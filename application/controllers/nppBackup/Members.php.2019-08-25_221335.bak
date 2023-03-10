@@ -1,0 +1,300 @@
+<?php
+	defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Members extends CI_Controller {
+
+	/**
+	 * Index Page for this controller.
+	 *
+	 * Maps to the following URL
+	 * 		http://example.com/index.php/welcome
+	 *	- or -
+	 * 		http://example.com/index.php/welcome/index
+	 *	- or -
+	 * Since this controller is set as the default controller in
+	 * config/routes.php, it's displayed at http://example.com/
+	 *
+	 * So any other public methods not prefixed with an underscore will
+	 * map to /index.php/welcome/<method_name>
+	 * @see https://codeigniter.com/user_guide/general/urls.html
+	 */
+	 
+	public function __construct(){
+		parent::__construct();
+		 $this->load->model('database_model');
+		 $this->load->model('tithe_model');
+		 $this->load->model('welfare_model');
+		 $this->load->library('form_validation');
+		 $this->load->library('pdf');
+	}
+	public function index()
+	{
+		$data['title'] = 'NCWC : ALL MEMBER';
+		$data['members'] = $this->database_model->allmemberactive();
+		$this->load->view('allmembers',$data);
+	}
+	
+	public function viewmember()
+	{
+		$id  = $this->uri->segment(3);
+		$data['title'] = 'NCWC : VIEW MEMBER';
+		$data['tithe'] = $this->tithe_model->viewthithe($id);
+		$data['welfare'] = $this->welfare_model->view_welfare($id);
+		$data['memberinfo'] = $this->database_model->editmember($id);
+		$this->load->view('viewmember',$data);
+	}
+	
+	public function nonmembers()
+	{
+		$data['title'] = 'NCWC : ALL NON MEMBER';
+		$data['members'] = $this->database_model->allmembernonactive();
+		$this->load->view('nonmembers',$data);
+	}
+	
+	public function editmember()
+	{
+		$id  = $this->uri->segment(3);
+		$data['title'] = 'NCWC : VIEW MEMBER';
+		$data['tithe'] = $this->tithe_model->viewthithe($id);
+		$data['welfare'] = $this->welfare_model->view_welfare($id);
+		$data['memberinfo'] = $this->database_model->editmember($id);
+		$this->load->view('editmember',$data);
+	}
+	
+	public function editvisitor()
+	{
+		$id  = $this->uri->segment(3);
+		$data['title'] = 'NCWC : EDIT VISITOR INFO';
+		$data['tithe'] = $this->tithe_model->viewthithe($id);
+		$data['welfare'] = $this->welfare_model->view_welfare($id);
+		$data['visitorinfo'] = $this->database_model->editvisitor($id);
+		$this->load->view('editvisitor',$data);
+	}
+	
+	
+	public function delmember()
+	{
+		$id = $this->uri->segment(3);
+		$this->database_model->delectmember($id);
+		 echo '
+			 Member Delected Successfully!
+		';
+		
+		
+	}
+	
+	public function delvisitor()
+	{
+		$id = $this->uri->segment(3);
+		$this->database_model->delvisitor($id);
+		 echo '
+			 Member Delected Successfully!
+		';
+		
+		
+	}
+	
+	
+	public function statusupdate()
+	{
+		$id = $_POST['cid'];
+		$status =$_POST['statu'];
+		$data = array('status'=> $status);
+		$this->database_model->updatestaus($data,$id);
+	}
+	
+	
+	
+	public function ushers()
+	{
+		$data['title'] = 'NCWC : ALL USHERS';
+		$data['members'] = $this->database_model->allactiveuhers();
+		$this->load->view('ushers',$data);
+	}
+	
+	public function instrumentalist()
+	{
+		$data['title'] = 'NCWC : ALL INSTRUMENTALISTS';
+		$data['members'] = $this->database_model->allactiveinstru();
+		$this->load->view('instrumentalist',$data);
+	}
+	
+	public function choir()
+	{
+		$data['title'] = 'NCWC : ALL CHORISTERS';
+		$data['members'] = $this->database_model->allactivechoir();
+		$this->load->view('choir',$data);
+	}
+	
+	public function media()
+	{
+		$data['title'] = 'NCWC : ALL USHERS';
+		$data['members'] = $this->database_model->allactiveMedia();
+		$this->load->view('media',$data);
+	}
+	
+	public function allvisitors()
+	{
+		$data['title'] = 'NCWC : ALL VISITORS';
+		$data['allvisitors'] = $this->database_model->allvisitors();
+		$this->load->view('allvisitors', $data);
+	}
+	
+	public function updatemember(){
+		$id = $this->uri->segment(3);
+		$this->form_validation->set_rules('fname','First name','required');
+		$this->form_validation->set_rules('onames','Other names','required');
+		$this->form_validation->set_rules('mstatus','Marital Status','required');
+		$this->form_validation->set_rules('occupation','Occupation','required');
+		$this->form_validation->set_rules('age','Age','required|numeric');
+		$this->form_validation->set_rules('gender','Gender','required');
+		$this->form_validation->set_rules('residence','Residence','required');
+		$this->form_validation->set_rules('noofchildern','No Of Childern','numeric');
+		$this->form_validation->set_rules('nation','Nationality','required');
+		$this->form_validation->set_rules('hometown','Hometown','required');
+		$this->form_validation->set_rules('telnum','Mobile Number','required|numeric|max_length[10]|min_length[10]');
+		$this->form_validation->set_rules('welid','Welfare ID','numeric');
+		$this->form_validation->set_rules('titleid','Tithe ID','numeric');
+		$this->form_validation->set_rules('dateofbirth','Date Of Birth','required');
+		$this->form_validation->set_rules('ncwy','Why Covenant','required');
+		if($this->form_validation->run()){
+			if($_FILES['InputFile']['name'] != ''){
+				//if image exist null check if image is available
+				$result = $this->database_model->editmember($id);
+				foreach($result->result_array() as $row){
+					$image = $row['Image'];
+				}
+				if(!empty($image)){
+					$url = "./asset/images/".$image;
+					if(unlink($url)){
+						$image = $_FILES['InputFile']['name'];			
+						$tmpimage = $_FILES['InputFile']['tmp_name'];
+						$source ="./asset/images/";
+						$extg = array("jpg","png","gif","jpeg");
+						$target_file = $source.basename($image);		
+						$ext = strtolower(substr($image, strripos($image, '.')+1));	
+						$filename = round(microtime(true)).mt_rand().'.'.$ext;
+						if(!in_array($ext,$extg)){
+							$this->session->set_flashdata('messages','Only This File Types are allowed JPG, PNG & GIF');
+							redirect('welcome/editmember'.$id);
+						}
+						if(move_uploaded_file($tmpimage,$source.$filename)){
+							$data = array(
+								'Firstname' => $this->input->post('fname'),
+								'Othernames' => $this->input->post('onames'),
+								'Resident' => $this->input->post('residence'),
+								'Age' => $this->input->post('age'),
+								'M_Status' => $this->input->post('mstatus'),
+								'Occupation' => $this->input->post('occupation'),
+								'nameofspouse' => $this->input->post('nameofspouse'),
+								'noofchildren' => $this->input->post('noofchildern'),
+								'nationality' => $this->input->post('nation'),
+								'hometown' => $this->input->post('hometown'),
+								'dateofbaptism' => $this->input->post('dateofbat'),
+								'address' => $this->input->post('address'),
+								'Telno' => $this->input->post('telnum'),
+								'Houseno' => $this->input->post('hsenum'),
+								'nameoffchrch' => $this->input->post('fchurch'),
+								'posinchrch' => $this->input->post('posc'),
+								'Cardid' => $this->input->post('welid'),
+								'TitheId' => $this->input->post('titleid'),
+								'Image' => $filename,
+								'Gender' => $this->input->post('gender'),
+								'dateofbirth' => $this->input->post('dateofbirth'),
+								'whyncwc' => $this->input->post('ncwy'),
+								'greatestdesire' => $this->input->post('desir'),
+								'posnow' => $this->input->post('denomin')
+						   );
+							$this->database_model->updatemember($data,$id);
+							$this->session->set_flashdata('message','Member info Updated Successfully');
+							redirect('welcome/editmember'.$id);
+						}else{
+							$this->session->set_flashdata('messages','Something Went Wrong Please Try Again');
+							redirect('welcome/editmember'.$id);
+						}
+					}
+				}else{
+					$image = $_FILES['InputFile']['name'];			
+						$tmpimage = $_FILES['InputFile']['tmp_name'];
+						$source ="./asset/images/";
+						$extg = array("jpg","png","gif","jpeg");
+						$target_file = $source.basename($image);		
+						$ext = strtolower(substr($image, strripos($image, '.')+1));	
+						$filename = round(microtime(true)).mt_rand().'.'.$ext;
+						if(!in_array($ext,$extg)){
+							$this->session->set_flashdata('messages','Only This File Types are allowed JPG, PNG & GIF');
+							redirect('welcome/editmember'.$id);
+						}
+						if(move_uploaded_file($tmpimage,$source.$filename)){
+							$data = array(
+								'Firstname' => $this->input->post('fname'),
+								'Othernames' => $this->input->post('onames'),
+								'Resident' => $this->input->post('residence'),
+								'Age' => $this->input->post('age'),
+								'M_Status' => $this->input->post('mstatus'),
+								'Occupation' => $this->input->post('occupation'),
+								'nameofspouse' => $this->input->post('nameofspouse'),
+								'noofchildren' => $this->input->post('noofchildern'),
+								'nationality' => $this->input->post('nation'),
+								'hometown' => $this->input->post('hometown'),
+								'dateofbaptism' => $this->input->post('dateofbat'),
+								'address' => $this->input->post('address'),
+								'Telno' => $this->input->post('telnum'),
+								'Houseno' => $this->input->post('hsenum'),
+								'nameoffchrch' => $this->input->post('fchurch'),
+								'posinchrch' => $this->input->post('posc'),
+								'Cardid' => $this->input->post('welid'),
+								'TitheId' => $this->input->post('titleid'),
+								'Image' => $filename,
+								'Gender' => $this->input->post('gender'),
+								'dateofbirth' => $this->input->post('dateofbirth'),
+								'whyncwc' => $this->input->post('ncwy'),
+								'greatestdesire' => $this->input->post('desir'),
+								'posnow' => $this->input->post('denomin')
+						   );
+							$this->database_model->updatemember($data,$id);
+							$this->session->set_flashdata('message','Member info Updated Successfully');
+							redirect('welcome/editmember'.$id);
+						}else{
+							$this->session->set_flashdata('messages','Something Went Wrong Please Try Again');
+							redirect('welcome/editmember'.$id);
+						}
+				}
+				
+			
+			}else{
+				$data = array(
+					'Firstname' => $this->input->post('fname'),
+					'Othernames' => $this->input->post('onames'),
+					'Resident' => $this->input->post('residence'),
+					'Age' => $this->input->post('age'),
+					'M_Status' => $this->input->post('mstatus'),
+					'Occupation' => $this->input->post('occupation'),
+					'nameofspouse' => $this->input->post('nameofspouse'),
+					'noofchildren' => $this->input->post('noofchildern'),
+					'nationality' => $this->input->post('nation'),
+					'hometown' => $this->input->post('hometown'),
+					'dateofbaptism' => $this->input->post('dateofbat'),
+					'address' => $this->input->post('address'),
+					'Telno' => $this->input->post('telnum'),
+					'Houseno' => $this->input->post('hsenum'),
+					'nameoffchrch' => $this->input->post('fchurch'),
+					'posinchrch' => $this->input->post('posc'),
+					'Cardid' => $this->input->post('welid'),
+					'TitheId' => $this->input->post('titleid'),
+					'Gender' => $this->input->post('gender'),
+					'dateofbirth' => $this->input->post('dateofbirth'),
+					'whyncwc' => $this->input->post('ncwy'),
+					'greatestdesire' => $this->input->post('desir'),
+					'posnow' => $this->input->post('denomin')
+			   );
+				$this->database_model->updatemember($data,$id);
+				$this->session->set_flashdata('message','Member info Updated Successfully');
+				redirect('welcome/mainprog');
+			}
+		}else{
+			$this->mainprog();
+		}
+	}
+}
+?>

@@ -1,0 +1,88 @@
+<?php
+	defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Members extends CI_Controller {
+
+	/**
+	 * Index Page for this controller.
+	 *
+	 * Maps to the following URL
+	 * 		http://example.com/index.php/welcome
+	 *	- or -
+	 * 		http://example.com/index.php/welcome/index
+	 *	- or -
+	 * Since this controller is set as the default controller in
+	 * config/routes.php, it's displayed at http://example.com/
+	 *
+	 * So any other public methods not prefixed with an underscore will
+	 * map to /index.php/welcome/<method_name>
+	 * @see https://codeigniter.com/user_guide/general/urls.html
+	 */
+	 
+	public function __construct(){
+		parent::__construct();
+		 $this->load->model('database_model');
+		 $this->load->model('tithe_model');
+		 $this->load->model('welfare_model');
+		 $this->load->library('form_validation');
+		 $this->load->library('pdf');
+	}
+	public function index()
+	{
+		$data['title'] = 'NCWC : ALL MEMBER';
+		$data['members'] = $this->database_model->allmemberactive();
+		$this->load->view('allmembers',$data);
+	}
+	
+	public function viewmember()
+	{
+		$data['title'] = 'NCWC : ALL MEMBER';
+		$data['members'] = $this->database_model->allmemberactive();
+		$this->load->view('viewmember',$data);
+	}
+	
+	
+	
+	
+	public function ushers()
+	{
+		$data['title'] = 'NCWC : ALL USHERS';
+		$data['members'] = $this->database_model->allactiveuhers();
+		$this->load->view('ushers',$data);
+	}
+	
+	public function instrumentalist()
+	{
+		$data['title'] = 'NCWC : ALL INSTRUMENTALISTS';
+		$data['members'] = $this->database_model->allactiveinstru();
+		$this->load->view('instrumentalist',$data);
+	}
+	
+	public function choir()
+	{
+		$data['title'] = 'NCWC : ALL CHORISTERS';
+		$data['members'] = $this->database_model->allactivechoir();
+		$this->load->view('choir',$data);
+	}
+	
+	public function media()
+	{
+		$data['title'] = 'NCWC : ALL USHERS';
+		$data['members'] = $this->database_model->allactiveMedia();
+		$this->load->view('media',$data);
+	}
+	
+	public function allvisitors()
+	{
+		$data['title'] = 'NCWC : ALL VISITORS';
+		$data['allvisitors'] = $this->database_model->allvisitors();
+		$this->load->view('allvisitors', $data);
+	}
+	
+	public function editvisitor()
+	{
+		$data['title'] = 'NCWC : EDIT VISITOR';
+	}
+	
+}
+?>
