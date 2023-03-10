@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "749771065854",
+    "firebase_url": "https://convic-19.firebaseio.com",
+    "project_id": "convic-19",
+    "storage_bucket": "convic-19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749771065854:android:86b9b1dbeea344531098af",
+        "android_client_info": {
+          "package_name": "com.moi.gov.gh.convic_19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749771065854-e1f662d3m5vd3d724n28u22jssmf7n9o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moi.gov.gh.convic_19",
+            "certificate_hash": "a39ab3cc8641996d8e25cddb2523457e423f0d68"
+          }
+        },
+        {
+          "client_id": "749771065854-f6613k47m5602kv9hi5tcpchqin26iv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmcHrhgAFvAraRbg9Xrya91uCBiOI0VNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749771065854-f6613k47m5602kv9hi5tcpchqin26iv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
