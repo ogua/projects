@@ -1,0 +1,71 @@
+[30-May-2018 07:04:34 UTC] PHP Fatal error:  Call to a member function AuthLogin() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Users.php on line 63
+[30-May-2018 07:05:41 UTC] PHP Fatal error:  Call to a member function getUserDetails() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Users.php on line 87
+[30-May-2018 07:07:50 UTC] PHP Fatal error:  Call to a member function fetch_parent_navi() on a non-object in /home/imranmian/public_html/dennis_fts/application/core/MY_Controller.php on line 46
+[30-May-2018 07:08:48 UTC] PHP Fatal error:  Call to a member function fetch_parent_navi() on a non-object in /home/imranmian/public_html/dennis_fts/application/core/MY_Controller.php on line 46
+[30-May-2018 07:13:22 UTC] PHP Fatal error:  Call to a member function fetch_bysinglecol() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Generals.php on line 44
+[30-May-2018 07:13:45 UTC] PHP Fatal error:  Call to a member function fetch_bysinglecol() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Generals.php on line 44
+[30-May-2018 07:25:32 UTC] PHP Fatal error:  Call to a member function fetch_records() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Users.php on line 129
+[30-May-2018 07:26:35 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/General.php on line 178
+[30-May-2018 07:26:37 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/General.php on line 178
+[30-May-2018 07:29:24 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/General.php on line 123
+[30-May-2018 07:29:25 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/General.php on line 123
+[30-May-2018 07:29:26 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/General.php on line 123
+[30-May-2018 07:32:12 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/General.php on line 123
+[30-May-2018 07:32:28 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/General.php on line 123
+[30-May-2018 07:32:30 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/General.php on line 123
+[30-May-2018 07:32:30 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/General.php on line 123
+[30-May-2018 07:52:56 UTC] PHP Fatal error:  Call to a member function fetch_records() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Employees.php on line 167
+[30-May-2018 08:10:11 UTC] PHP Fatal error:  Call to a member function logout() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Users.php on line 51
+[30-May-2018 09:33:02 UTC] PHP Fatal error:  Call to a member function fetch_parent_menu() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Generals.php on line 253
+[30-May-2018 09:40:17 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/Menus.php on line 117
+[30-May-2018 09:40:35 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/Menus.php on line 117
+[30-May-2018 09:55:56 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/Menus.php on line 117
+[30-May-2018 09:56:03 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/models/Menus.php on line 117
+[01-Jun-2018 11:01:23 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[01-Jun-2018 19:05:10 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/created_files.php on line 314
+[01-Jun-2018 19:09:09 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/created_files.php on line 314
+[01-Jun-2018 19:09:44 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/created_files.php on line 314
+[01-Jun-2018 19:09:55 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/created_files.php on line 314
+[02-Jun-2018 09:31:44 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 578
+[02-Jun-2018 09:31:58 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 578
+[02-Jun-2018 09:32:05 UTC] PHP Fatal error:  Call to a member function result() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 578
+[02-Jun-2018 18:52:34 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 126
+[02-Jun-2018 18:52:37 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 126
+[02-Jun-2018 18:54:14 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 126
+[02-Jun-2018 18:55:05 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 124
+[02-Jun-2018 18:58:47 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/imranmian/public_html/dennis_fts/application/views/files/created_files.php on line 185
+[02-Jun-2018 19:09:07 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/imranmian/public_html/dennis_fts/application/views/files/returned_files.php on line 162
+[02-Jun-2018 19:09:10 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/imranmian/public_html/dennis_fts/application/views/files/returned_files.php on line 162
+[03-Jun-2018 11:16:22 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[03-Jun-2018 11:18:25 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[03-Jun-2018 11:18:26 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[03-Jun-2018 11:19:00 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[03-Jun-2018 11:19:03 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[03-Jun-2018 11:19:36 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[03-Jun-2018 11:19:47 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[03-Jun-2018 11:19:48 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[03-Jun-2018 11:20:35 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[03-Jun-2018 11:20:37 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 227
+[03-Jun-2018 17:43:01 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 100
+[03-Jun-2018 17:43:26 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 100
+[03-Jun-2018 17:44:42 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:45:15 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:48:02 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:49:24 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:49:26 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:49:56 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:49:59 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:50:00 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:50:55 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:50:57 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:50:58 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 99
+[03-Jun-2018 17:52:35 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/imranmian/public_html/dennis_fts/application/views/files/receive_files.php on line 101
+[04-Jun-2018 08:52:12 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Outgoing_mails.php on line 97
+[07-Jun-2018 19:01:06 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 751
+[11-Jun-2018 10:45:04 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 655
+[19-Jun-2018 11:17:40 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 779
+[19-Jun-2018 11:20:28 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 788
+[19-Jun-2018 11:22:05 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 788
+[19-Jun-2018 12:05:35 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 257
+[19-Jun-2018 12:13:59 UTC] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Letter.php on line 257
+[11-Jul-2018 06:26:37 UTC] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/imranmian/public_html/dennis_fts/application/controllers/Outgoing_mails.php on line 116

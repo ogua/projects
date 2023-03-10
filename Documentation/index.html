@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>EUM</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div id="wrapper">
+
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand"><a href="#"> KANDI UMS </a></li>
+            <li class="main-menu"><a href="#introduction"><i class="fa fa-file-pdf-o"></i> Introduction</a></li>
+            <li class="main-menu"><a href="#requirements"><i class="fa fa-server" aria-hidden="true"></i> Server
+                Requirements</a></li>
+
+            <li class="main-menu"><a href="#installation"><i class="fa fa-cogs" aria-hidden="true"></i> Installation</a>
+            </li>
+
+            <li class="dropdown" id="myDropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                    class="fa fa-fw fa-plus"></i> How to use <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+
+                    <li><a href="#useRegistrtion"><i class="fa fa-circle-o" aria-hidden="true"></i> Registration
+                        form</a></li>
+                    <li><a href="#useLogin"><i class="fa fa-circle-o" aria-hidden="true"></i> Login form</a></li>
+                    <li><a href="#useDashboard"><i class="fa fa-circle-o" aria-hidden="true"></i> Dashboard</a></li>
+                    <li><a href="#useProfile"><i class="fa fa-circle-o" aria-hidden="true"></i> Profile</a></li>
+                    <li><a href="#useUser"><i class="fa fa-circle-o" aria-hidden="true"></i> User Management</a></li>
+                    <li><a href="#useCompany"><i class="fa fa-circle-o" aria-hidden="true"></i> Company Profile</a></li>
+                    <li><a href="#useMenus"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Settings</a></li>
+                    <li><a href="#useGroups"><i class="fa fa-circle-o" aria-hidden="true"></i> Groups & Permissions</a></li>
+                </ul>
+            </li>
+            <li class="main-menu"><a href="#credits"><i class="fa fa-book" aria-hidden="true"></i> Credits</a></li>
+
+        </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas"><span
+                class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span></button>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 ">
+                    <h1 class="page-header" id="introduction">KANDI - User Management System</h1>
+
+                    <p>
+                        KANDI UMS is a PHP application built up around the CodeIgniter framework(version 1.0.0), that
+                        allowing the registration and administration of users.It can be used as a base platform for any
+                        CodeIgniter based web applications. It provide secure login, authentication, authorization and
+                        complete user management.
+
+                    <p>
+                        If you already have an existing PHP application, and you want to add user login, registration
+                        and user role management features,then you need to move your application to CodeIgniter
+                        framework and incorporate it inside KANDI UMS application.</p>
+                    </p>
+                    <hr>
+                    <div class="jquery-script-ads" style="margin:30px auto;">
+                    </div>
+                    <strong><p> By: beb300.com</p>
+
+                        <p>Email: shahmian@gmail.com</p></strong>
+
+                    <p>Thank you for purchasing our software. If you have any questions that are beyond the scope of
+                        this help file please feel free to contact us. Thank you so much for purchasing one of our
+                        products!</p>
+
+
+                    <h2 id="features">Features</h2>
+                    <ul>
+                        <li>Built with CodeIgniter 3.1</li>
+                        <li>Secure user registration and login</li>
+                        <li>Password reset</li>
+                        <li>Secure password algorithm using sha1</li>
+                        <li>Avatar and logo upload</li>
+                        <li>Login with email or username</li>
+                        <li>Interactive Dashboard</li>
+                        <li>Powerful admin panel</li>
+                        <li>Manage permissions</li>
+                        <li>Assign permission to users</li>
+                        <li>Easy installation using installation wizard</li>
+                        <li>Built using AdminLTE</li>
+                        <li>Client side and server side form validation</li>
+                        <li>Fully object oriented</li>
+                    </ul>
+
+                    <h2 id="requirements">Server Requirements</h2>
+                    <ul>
+                        <li>PHP version 5.4 or newer is recommended.</li>
+                        <li>MySQL (5.1+) via the mysqli</li>
+                    </ul>
+
+
+                    <h2 id="installation">Installation</h2>
+                    Just make the <code>application/config/database.php</code> file writable by setting them 777
+                    permissions, and you are good to go.
+                    <p> Please follow the steps </p>
+                    <ol>
+                        <li>Download the file which you have purchased</li>
+                        <li>Upload Zip File in your server</li>
+                        <li>Extract the Zip file that you uploaded</li>
+                        <li>Now Go to your Browser and Check http://www.yourdomain.com and you will see wizard View</li>
+                        <br>&nbsp;
+                        <img class="demo_image" alt="registration form" src="images/01.PNG">
+                        <br>&nbsp;
+                        <li>If all are good and green, Click Next and you will be asked for database credentials.</li>
+                        <br>&nbsp;
+                        <img class="demo_image" alt="registration form" src="images/02.PNG">
+                        <br>&nbsp;
+                        <li>Give your Database Host Name (Ex: localhost), Database User Name, Password ( That’s given by
+                            your Domain & Hosting Provider), Database Name & click Next button.
+                        </li>
+                        <br>
+                        <img class="demo_image" alt="registration form" src="images/03.PNG">
+
+                        <br>&nbsp;
+                        <li>Give your email/username and a password and click Next.</li>
+                        <br>&nbsp;
+                        <img class="demo_image" alt="registration form" src="images/04.PNG">
+                        <br>&nbsp;
+                        <li>Click Install Kandi UMS and it will take 2-3 minutes to install this Awesome User Management
+                            System.
+                        </li>
+                    </ol>
+
+                    <h2 id="howtouse">How to use</h2>
+                    <ol class="content_list">
+                        <li><h4 id="useLogin"> Login form </h4></li>
+                        Enter your email and password and click log In button. Now you can see the dashboard.
+                        <br>
+                        <br>
+                        <img alt="registration form" src="images/06.PNG" class="demo_image">
+                        <li><h4 id="useDashboard"> Dashboard </h4></li>
+                        In your dashboard you can see all information in simple way.
+                        <br>
+                        <br>
+                        <img alt="registration form" src="images/07.PNG" class="demo_image">
+                        <li><h4 id="useProfile">Profile</h4></li>
+                        Here you can see list of Employees and can edit your profile details.
+                        <br>
+                        <br>
+                        <img alt="registration form" src="images/08.png" class="demo_image">
+
+                        <li><h4 id="useUser">User Management(search,delete,activate/deactivate)</h4></li>
+
+                        <h5>Add User</h5>
+                        To add a new user, click on the User Management-> Add user link. A View will open.
+                        On the left, you will Add user Form. On the right, you will see those list of users. Fill the
+                        fields and submit the form.You should fill all required fields.
+                        <h5>Delete User</h5>
+                        For delete user you have to select the user from the list and then click on the "Delete" button.
+                        <h5>Search User</h5>
+                        User table contain a search field at the top right of the table.You can search a user with
+                        username/email or phone.
+                        <h5>Activate/Deactivate User</h5>
+                        If a user is active, you will see Deactivate button otherwise Activate button .
+                        <br>
+                        <br>
+                        <img alt="registration form" src="images/09.PNG" class="demo_image">
+
+                        <br>
+                        <br>
+                        <li><h4 id="useCompany">Company Profile</h4></li>
+                        Under the General settings->Profile Settings, You Can add your business/company profile, Like
+                        Business/Company name, address, contact details, company logo.
+
+                        <br>
+                        <br>
+                        <img alt="registration form" class="demo_image" src="images/10.PNG" class="demo_image">
+                        <li><h4 id="useMenus">Add Menus</h4></li>
+                        To add new menu, go to User management->Add menu link. View will open showing your list of menus
+                        and a form.
+                        Enter Menu name, Menu Url (controller/function), Order of the menu and its parent menu.
+                        <br>
+                        <br>
+                        <br>
+                        <img alt="registration form" class="demo_image" src="images/11.PNG" class="demo_image">
+
+                        <br>
+                        <br>
+                        <li><h4 id="useGroups">Add Groups/Roles</h4></li>
+                        To add new group / role, go to General Settings->Add Group link. View will open showing your
+                        list of groups and a form.
+                        Enter Group name. To Give permissions to each group, click on Permissions button in-front of the
+                        group.
+                        <br>
+                        <br>
+                        <img alt="registration form" class="demo_image" src="images/12.PNG" class="demo_image">
+                        <br>
+                        <br>
+                        Here you will see your menus with CRUD Permissions like View, Insert, Update, Delete.
+                        What it mean's is which user of a group can see which menus, the forms inside that menu,
+                        permission will be applied
+                        like Insert or Edit Permission. Instead of placing a Button in a form
+                        just place "$My_Controller->savePermission;" in PHP tags and if this user have insert
+                        permission for this form/ menu
+                        he will see the button otherwise he won't. For Edit ($My_Controller->editPermission;)
+                        For Delete ($My_Controller->deletePermission;)
+                        <br>
+                        <br>
+                        <img alt="registration form" class="demo_image" src="images/13.PNG" class="demo_image">
+
+
+
+
+                        <h2 id="credits">Credits</h2>
+                        <ol>
+                            <li><a href="https://www.codeigniter.com" target="_blank">CodeIgniter</a></li>
+                            <li><a href="https://almsaeedstudio.com" target="_blank">AdminLTE</a></li>
+                            <li><a href="http://getbootstrap.com" target="_blank"> Bootstrap</a></li>
+                            <li><a href="https://jquery.com" target="_blank"> jQuery</a></li>
+                            <li><a href="http://tablesorter.com/" target="_blank">Tablesorter</a></li>
+                            <li><a href="https://github.com/jzaefferer/jquery-validation" target="_blank">Jquery-validation</a>
+                            </li>
+                        </ol>
+                        <br>
+                        <br>
+                        </ol>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#wrapper').toggleClass('toggled');
+
+        var trigger = $('.hamburger'),
+
+                isClosed = false;
+        hamburger_cross();
+
+        trigger.click(function () {
+            hamburger_cross();
+        });
+
+        function hamburger_cross() {
+
+            if (isClosed == true) {
+
+                trigger.removeClass('is-open');
+                trigger.addClass('is-closed');
+                isClosed = false;
+            } else {
+
+                trigger.removeClass('is-closed');
+                trigger.addClass('is-open');
+                isClosed = true;
+            }
+        }
+
+        $('[data-toggle="offcanvas"]').click(function () {
+            $('#wrapper').toggleClass('toggled');
+        });
+
+
+        $("#myDropdown ul li").on("click", function (e) {
+
+            e.stopPropagation();
+            $('#myDropdown').on('hide.bs.dropdown', function () {
+                return true;
+            });
+
+        });
+
+        $("ul.nav.sidebar-nav > li.main-menu").on("click", function (e) {
+            e.startPropagation();
+        });
+
+    });
+</script>
+</body>
+</html>
