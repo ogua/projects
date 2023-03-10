@@ -1,0 +1,7 @@
+cashier login information
+ username : Ahmed
+ password : 1234
+ 
+Admin login information
+ username : Admin
+ password : 1234
