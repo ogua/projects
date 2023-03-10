@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ncwcdatabase.EditTitheAmountController">
+   <top>
+      <HBox prefHeight="118.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/image/12.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region prefHeight="141.0" prefWidth="62.0" />
+            <Label prefHeight="141.0" prefWidth="326.0" text="     EDIT AMOUNT PAID TITHE">
+               <font>
+                  <Font name="Bauhaus 93" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="520.0" vgap="3.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="470.0" minWidth="10.0" prefWidth="470.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="45.0" prefWidth="225.0" text="CARDID" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cardid" prefHeight="30.0" prefWidth="383.0" promptText="CARDID" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="45.0" prefWidth="189.0" text="CHANGE  TO" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amount" prefHeight="30.0" prefWidth="383.0" promptText="AMOUNT $" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="Qid" prefHeight="30.0" prefWidth="383.0" promptText="QUERY ID" GridPane.columnIndex="1" />
+            <Label prefHeight="31.0" prefWidth="185.0" text="QueryID" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="40.0" right="40.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="56.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="change" mnemonicParsing="false" onAction="#EditTithe" prefHeight="30.0" prefWidth="90.0" text="Change">
+               <HBox.margin>
+                  <Insets left="180.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cls" mnemonicParsing="false" onAction="#ClearDataS" prefHeight="30.0" prefWidth="90.0" text="Clear">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

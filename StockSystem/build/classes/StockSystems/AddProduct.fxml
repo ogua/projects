@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="main" prefHeight="504.0" prefWidth="1009.0" style="-fx-background-color: abd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StockSystems.AddProductsController">
+   <children>
+      <HBox>
+         <children>
+            <MenuBar prefHeight="25.0" prefWidth="950.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Add Cashier">
+                     <items>
+                        <MenuItem fx:id="aCash" mnemonicParsing="false" onAction="#Acash" text="Add Cashier" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Add Product">
+                     <items>
+                        <MenuItem fx:id="Apro" mnemonicParsing="false" onAction="#aPro" text="Add Product" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="View Cash Details">
+                     <items>
+                        <MenuItem fx:id="Cdetail" mnemonicParsing="false" onAction="#cdetail" text="View Cash Details" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="View Transaction">
+                     <items>
+                        <MenuItem fx:id="transac" mnemonicParsing="false" onAction="#Trans" text="View Transaction" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Inventory">
+                     <items>
+                        <MenuItem fx:id="inven" mnemonicParsing="false" onAction="#Inven" text="Inventory" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Update Stock">
+                     <items>
+                        <MenuItem fx:id="UpdateS" mnemonicParsing="false" onAction="#Updates" text="Update Stock" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Sales as per Product">
+                     <items>
+                        <MenuItem fx:id="sPerP" mnemonicParsing="false" onAction="#SperP" text="Sales as per Product" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Sales as per Day">
+                     <items>
+                        <MenuItem fx:id="SperD" mnemonicParsing="false" onAction="#Sperd" text="Sales as per Day" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Button fx:id="lOut" mnemonicParsing="false" onAction="#Logout" prefHeight="25.0" prefWidth="101.0" text="Logout" />
+         </children>
+      </HBox>
+      <AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="1007.0" styleClass="mainFxmlClass">
+         <children>
+            <Label layoutX="8.0" layoutY="14.0" prefHeight="38.0" prefWidth="231.0" text="ADD PRODUCT">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+            <Label layoutX="297.0" layoutY="113.0" prefHeight="32.0" prefWidth="135.0" text="Product ID" />
+            <Label layoutX="297.0" layoutY="148.0" prefHeight="32.0" prefWidth="135.0" text="Product Name" />
+            <Label layoutX="297.0" layoutY="192.0" prefHeight="32.0" prefWidth="135.0" text="Quantity" />
+            <Label layoutX="297.0" layoutY="235.0" prefHeight="32.0" prefWidth="135.0" text="Amount" />
+            <Label layoutX="297.0" layoutY="280.0" prefHeight="32.0" prefWidth="135.0" text="Description" />
+            <TextField fx:id="cid" disable="true" layoutX="415.0" layoutY="123.0" prefHeight="32.0" prefWidth="268.0" promptText="Product ID" />
+            <TextField fx:id="cname" layoutX="415.0" layoutY="164.0" prefHeight="32.0" prefWidth="268.0" promptText="Product NAME" />
+            <TextField fx:id="cno" layoutX="415.0" layoutY="203.0" prefHeight="32.0" prefWidth="268.0" promptText="Quantity" />
+            <TextField fx:id="cadd" layoutX="413.0" layoutY="239.0" prefHeight="32.0" prefWidth="268.0" promptText="Amount" />
+            <TextField fx:id="cpass" layoutX="416.0" layoutY="284.0" prefHeight="32.0" prefWidth="268.0" promptText="Description" />
+            <DatePicker fx:id="cdate" layoutX="417.0" layoutY="333.0" prefHeight="25.0" prefWidth="268.0" promptText="Choose Date" />
+            <Button fx:id="Cadd" layoutX="415.0" layoutY="398.0" mnemonicParsing="false" onAction="#Addd" prefHeight="25.0" prefWidth="113.0" style="-fx-background-radius: 30;" text="Add" />
+            <Button fx:id="cclear" layoutX="550.0" layoutY="398.0" mnemonicParsing="false" onAction="#ClaerD" prefHeight="25.0" prefWidth="113.0" style="-fx-background-radius: 30;" text="Clear" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

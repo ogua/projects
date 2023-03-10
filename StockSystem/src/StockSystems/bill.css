@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+ -fx-background-color: #d6d151;
+}
+.logout{
+    -fx-background-color: red;
+}
+.mainFx{
+    -fx-background-color: #d6f3a9
+}
+button{
+    -fx
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="NcwcDatabase.jnlp">
+  <information>
+    <title>NcwcDatabase</title>
+    <vendor>ogua it solutions</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="NcwcDatabase.jar" size="2369283" download="eager" />
+    <jar href="lib\ant-1.7.1.jar" size="1406462" download="eager" />
+    <jar href="lib\antlr-2.7.5.jar" size="455444" download="eager" />
+    <jar href="lib\barbecue-1.5-beta1.jar" size="98675" download="eager" />
+    <jar href="lib\barcode4j-2.1.jar" size="290078" download="eager" />
+    <jar href="lib\batik-anim.jar" size="103039" download="eager" />
+    <jar href="lib\batik-awt-util.jar" size="428563" download="eager" />
+    <jar href="lib\batik-bridge.jar" size="598758" download="eager" />
+    <jar href="lib\batik-css.jar" size="338074" download="eager" />
+    <jar href="lib\batik-dom.jar" size="187810" download="eager" />
+    <jar href="lib\batik-ext.jar" size="13123" download="eager" />
+    <jar href="lib\batik-gvt.jar" size="257564" download="eager" />
+    <jar href="lib\batik-parser.jar" size="80985" download="eager" />
+    <jar href="lib\batik-script.jar" size="68891" download="eager" />
+    <jar href="lib\batik-svg-dom.jar" size="653095" download="eager" />
+    <jar href="lib\batik-svggen.jar" size="233396" download="eager" />
+    <jar href="lib\batik-util.jar" size="139129" download="eager" />
+    <jar href="lib\batik-xml.jar" size="33190" download="eager" />
+    <jar href="lib\bcel-5.2.jar" size="567282" download="eager" />
+    <jar href="lib\bsh-2.0b4.jar" size="306165" download="eager" />
+    <jar href="lib\castor-core-1.3.3.jar" size="55585" download="eager" />
+    <jar href="lib\castor-xml-1.3.3.jar" size="934760" download="eager" />
+    <jar href="lib\commons-beanutils-1.9.0.jar" size="246727" download="eager" />
+    <jar href="lib\commons-codec-1.5.jar" size="79333" download="eager" />
+    <jar href="lib\commons-collections-3.2.1.jar" size="624563" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="215241" download="eager" />
+    <jar href="lib\commons-javaflow-20060411.jar" size="102264" download="eager" />
+    <jar href="lib\commons-logging-1.1.1.jar" size="65471" download="eager" />
+    <jar href="lib\core-2.3.0.jar" size="557144" download="eager" />
+    <jar href="lib\dom4j-1.6.1.jar" size="331574" download="eager" />
+    <jar href="lib\ecj-4.3.1.jar" size="1887600" download="eager" />
+    <jar href="lib\eclipselink.jar" size="8884795" download="eager" />
+    <jar href="lib\groovy-all-2.4.3.jar" size="7463962" download="eager" />
+    <jar href="lib\hibernate-core-3.3.2.GA.jar" size="2463277" download="eager" />
+    <jar href="lib\hsqldb-1.8.0-10.jar" size="745642" download="eager" />
+    <jar href="lib\httpclient-4.3.4.jar" size="636452" download="eager" />
+    <jar href="lib\httpcore-4.3.2.jar" size="308231" download="eager" />
+    <jar href="lib\itext-2.1.7.js4.jar" size="1185336" download="eager" />
+    <jar href="lib\jackson-annotations-2.1.4.jar" size="40969" download="eager" />
+    <jar href="lib\jackson-core-2.1.4.jar" size="218168" download="eager" />
+    <jar href="lib\jackson-databind-2.1.4.jar" size="985586" download="eager" />
+    <jar href="lib\jasperreports-6.2.0.jar" size="5684613" download="eager" />
+    <jar href="lib\jasperreports-fonts-6.2.0.jar" size="2480997" download="eager" />
+    <jar href="lib\jasperreports-javaflow-6.2.0.jar" size="5729500" download="eager" />
+    <jar href="lib\javax.persistence_2.1.0.v201304241213.jar" size="185056" download="eager" />
+    <jar href="lib\jaxen-1.1.1.jar" size="246534" download="eager" />
+    <jar href="lib\jcommon-1.0.23.jar" size="354959" download="eager" />
+    <jar href="lib\jfreechart-1.0.19.jar" size="1636452" download="eager" />
+    <jar href="lib\jpa.jar" size="57104" download="eager" />
+    <jar href="lib\jxl-2.6.10.jar" size="790526" download="eager" />
+    <jar href="lib\log4j-1.2.15.jar" size="421140" download="eager" />
+    <jar href="lib\lucene-analyzers-common-4.5.1.jar" size="1643313" download="eager" />
+    <jar href="lib\lucene-core-4.5.1.jar" size="2456683" download="eager" />
+    <jar href="lib\lucene-queryparser-4.5.1.jar" size="413737" download="eager" />
+    <jar href="lib\mondrian-3.1.1.12687.jar" size="2826489" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.42-bin.jar" size="1036039" download="eager" />
+    <jar href="lib\olap4j-0.9.7.309-JS-3.jar" size="479824" download="eager" />
+    <jar href="lib\org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" size="1444024" download="eager" />
+    <jar href="lib\png-encoder-1.5.jar" size="12005" download="eager" />
+    <jar href="lib\poi-3.10.1.jar" size="2091279" download="eager" />
+    <jar href="lib\poi-ooxml-3.10.1.jar" size="1089564" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.10.1.jar" size="5470525" download="eager" />
+    <jar href="lib\rhino-1.7.6.jar" size="1239336" download="eager" />
+    <jar href="lib\saaj-api-1.3.jar" size="23016" download="eager" />
+    <jar href="lib\serializer.jar" size="289775" download="eager" />
+    <jar href="lib\servlet-api-2.4.jar" size="105274" download="eager" />
+    <jar href="lib\spring-beans-2.5.5.jar" size="516082" download="eager" />
+    <jar href="lib\spring-core-2.5.5.jar" size="308079" download="eager" />
+    <jar href="lib\velocity-1.7-dep.jar" size="861013" download="eager" />
+    <jar href="lib\xalan-2.7.1.jar" size="3312841" download="eager" />
+    <jar href="lib\xercesImpl-2.10.0.jar" size="1468596" download="eager" />
+    <jar href="lib\xml-apis-ext.jar" size="107285" download="eager" />
+    <jar href="lib\xml-apis.jar" size="258224" download="eager" />
+    <jar href="lib\xmlbeans-2.5.0.jar" size="2941941" download="eager" />
+    <jar href="lib\xmpcore-5.1.1.jar" size="129020" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="NcwcDatabase" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="ncwcdatabase.NcwcDatabase"  name="NcwcDatabase" />
+  <update check="background"/>
+</jnlp>

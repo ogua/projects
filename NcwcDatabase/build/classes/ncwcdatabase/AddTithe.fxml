@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ncwcdatabase.AddTitheController">
+   <top>
+      <HBox prefHeight="118.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/image/12.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Region prefHeight="150.0" prefWidth="75.0" />
+            <Label prefHeight="150.0" prefWidth="298.0" text="ADD NEW TITHE PAID">
+               <font>
+                  <Font name="Bauhaus 93" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="344.0" minWidth="10.0" prefWidth="230.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="470.0" minWidth="10.0" prefWidth="470.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="16.0" minHeight="9.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="45.0" prefWidth="225.0" text="CARDID">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="45.0" prefWidth="225.0" text="FIRSTNAME" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="45.0" prefWidth="225.0" text="OTHERNAMES" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="45.0" prefWidth="225.0" text="MONTH" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cardid" prefHeight="60.0" prefWidth="430.0" promptText="CARDID" GridPane.columnIndex="1" />
+            <TextField fx:id="firstname" prefHeight="34.0" prefWidth="430.0" promptText="FIRSTNAME" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="other_n" prefHeight="60.0" prefWidth="434.0" promptText="OTHERNAMES" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="month" prefHeight="60.0" prefWidth="434.0" promptText="SELECT MONTH" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ComboBox fx:id="year" prefHeight="60.0" prefWidth="434.0" promptText="SELECT YEAR" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label prefHeight="45.0" prefWidth="190.0" text="YEAR" GridPane.rowIndex="10">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="45.0" prefWidth="189.0" text="AMOUNT" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amount" prefHeight="60.0" prefWidth="434.0" promptText="AMOUNT $" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="errorid" prefHeight="17.0" prefWidth="207.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="errorname" prefHeight="17.0" prefWidth="185.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="errorothername" prefHeight="17.0" prefWidth="157.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="errorAmount" prefHeight="17.0" prefWidth="152.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="40.0" right="40.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="88.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="submit" mnemonicParsing="false" onAction="#InsertTithe" prefHeight="41.0" prefWidth="110.0" text="Submit">
+               <HBox.margin>
+                  <Insets left="228.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cls" mnemonicParsing="false" onAction="#clearAllData" prefHeight="39.0" prefWidth="110.0" text="Clear">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

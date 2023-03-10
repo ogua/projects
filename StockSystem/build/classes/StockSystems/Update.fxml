@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainPane" style="-fx-background-color: abd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StockSystems.UpdateController">
+   <children>
+      <HBox>
+         <children>
+            <MenuBar prefHeight="25.0" prefWidth="950.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Add Cashier">
+                     <items>
+                        <MenuItem fx:id="aCash" mnemonicParsing="false" onAction="#Acash" text="Add Cashier" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Add Product">
+                     <items>
+                        <MenuItem fx:id="Apro" mnemonicParsing="false" onAction="#aPro" text="Add Product" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="View Cash Details">
+                     <items>
+                        <MenuItem fx:id="Cdetail" mnemonicParsing="false" onAction="#cdetail" text="View Cash Details" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="View Transaction">
+                     <items>
+                        <MenuItem fx:id="transac" mnemonicParsing="false" onAction="#Trans" text="View Transaction" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Inventory">
+                     <items>
+                        <MenuItem fx:id="inven" mnemonicParsing="false" onAction="#Inven" text="Inventory" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Update Stock">
+                     <items>
+                        <MenuItem fx:id="UpdateS" mnemonicParsing="false" onAction="#Updates" text="Update Stock" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Sales as per Product">
+                     <items>
+                        <MenuItem fx:id="sPerP" mnemonicParsing="false" onAction="#SperP" text="Sales as per Product" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Sales as per Day">
+                     <items>
+                        <MenuItem fx:id="SperD" mnemonicParsing="false" onAction="#Sperd" text="Sales as per Day" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Button fx:id="lOut" mnemonicParsing="false" onAction="#Logout" prefHeight="25.0" prefWidth="101.0" text="Logout" />
+         </children>
+      </HBox>
+      <AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="887.0" styleClass="mainFxmlClass">
+          
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="28.0" prefWidth="194.0" text="UPDATE STOCK">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+            <Label layoutX="293.0" layoutY="261.0" prefHeight="25.0" prefWidth="119.0" text="QTY AVAILABLE" />
+            <Label layoutX="293.0" layoutY="223.0" prefHeight="25.0" prefWidth="89.0" text="PRICE" />
+            <Label layoutX="293.0" layoutY="180.0" prefHeight="25.0" prefWidth="89.0" text="NAME" />
+            <Label layoutX="293.0" layoutY="142.0" prefHeight="25.0" prefWidth="89.0" text="Product ID" />
+            <TextField fx:id="pQty" disable="true" layoutX="439.0" layoutY="261.0" prefHeight="25.0" prefWidth="223.0" promptText="Pqty" style="-fx-background-radius: 30;" />
+            <TextField fx:id="pPrice" layoutX="443.0" layoutY="223.0" prefHeight="25.0" prefWidth="223.0" promptText="Pprice" style="-fx-background-radius: 30;" />
+            <TextField fx:id="oName" layoutX="439.0" layoutY="180.0" prefHeight="25.0" prefWidth="223.0" promptText="pname" style="-fx-background-radius: 30;" />
+            <TextField fx:id="prdtid" layoutX="439.0" layoutY="142.0" onAction="#GetInfo" onKeyPressed="#SearchData" onKeyTyped="#GetInfo" prefHeight="25.0" prefWidth="223.0" promptText="productid" style="-fx-background-radius: 30;" />
+            <Label layoutX="293.0" layoutY="301.0" prefHeight="25.0" prefWidth="119.0" text="QTY PURCHASED" />
+            <TextField fx:id="paty2" layoutX="439.0" layoutY="301.0" prefHeight="25.0" prefWidth="223.0" promptText="QTY PURCHASED" style="-fx-background-radius: 30;" />
+            <Button fx:id="Update" layoutX="435.0" layoutY="380.0" mnemonicParsing="false" onAction="#Updates" prefHeight="25.0" prefWidth="108.0" style="-fx-background-radius: 30;" text="UPDATE" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainPaneV" style="-fx-background-color: abd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StockSystems.BillController">
+   <children>
+      <HBox>
+         <children>
+            <MenuBar prefHeight="33.0" prefWidth="760.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="BILL">
+                     <items>
+                        <MenuItem fx:id="billMenu" mnemonicParsing="false" onAction="#BillMenu" text="BILL" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="PRODUCT INFORMATION">
+                     <items>
+                        <MenuItem fx:id="ProdInfo" mnemonicParsing="false" onAction="#ProductInformation" text="PRODUCT" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <Label fx:id="Time" prefHeight="30.0" prefWidth="48.0" style="-fx-background-color: white;" />
+            <Label fx:id="date" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: fff;" />
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#LogoutMenu" prefHeight="31.0" prefWidth="101.0" text="LOGOUT" />
+         </children>
+      </HBox>
+      <SplitPane dividerPositions="0.2992465016146394" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="982.0" style="-fx-background-color: abd;">
+        <items>
+          <AnchorPane fx:id="uSERid" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="6.0" prefHeight="25.0" prefWidth="75.0" text="BILL">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="53.0" prefHeight="25.0" prefWidth="68.0" text="BILL NO">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="78.0" layoutY="103.0" prefHeight="25.0" prefWidth="89.0" text="Product ID" />
+                  <Label layoutX="78.0" layoutY="143.0" prefHeight="25.0" prefWidth="89.0" text="NAME" />
+                  <Label layoutX="78.0" layoutY="181.0" prefHeight="25.0" prefWidth="89.0" text="PRICE" />
+                  <Label layoutX="78.0" layoutY="219.0" prefHeight="25.0" prefWidth="89.0" text="QUANTITY" />
+                  <Label layoutX="78.0" layoutY="256.0" prefHeight="25.0" prefWidth="89.0" text="DISCOUNT" />
+                  <Button fx:id="addBill" layoutX="58.0" layoutY="489.0" mnemonicParsing="false" onAction="#AddBill" prefHeight="25.0" prefWidth="75.0" style="-fx-background-radius: 30;" styleClass="addBill" text="ADD" />
+                  <Button fx:id="resetBill" layoutX="141.0" layoutY="489.0" mnemonicParsing="false" onAction="#ResetBill" prefHeight="25.0" prefWidth="75.0" style="-fx-background-radius: 30; -fx-text-fill: red;" text="RESET" />
+                  <TextField fx:id="billno" disable="true" layoutX="115.0" layoutY="53.0" onAction="#getbill" prefHeight="25.0" prefWidth="167.0" promptText="BILL NO" style="-fx-background-radius: 30;" />
+                  <TextField fx:id="prdtid" layoutX="142.0" layoutY="103.0" onAction="#GetField" promptText="productid" style="-fx-background-radius: 30;" />
+                  <TextField fx:id="oName" layoutX="142.0" layoutY="143.0" promptText="pname" style="-fx-background-radius: 30;" />
+                  <TextField fx:id="pPrice" layoutX="142.0" layoutY="181.0" prefHeight="25.0" prefWidth="104.0" promptText="Pprice" style="-fx-background-radius: 30;" />
+                  <TextField fx:id="pQty" layoutX="142.0" layoutY="219.0" promptText="Pqty" style="-fx-background-radius: 30;" />
+                  <TextField fx:id="pDcntt" layoutX="142.0" layoutY="256.0" prefHeight="25.0" prefWidth="104.0" promptText="Pqcnt" style="-fx-background-radius: 30;" />
+                  <DatePicker fx:id="pDate" layoutX="112.0" layoutY="304.0" promptText="Choose Date" style="-fx-background-radius: 30;" />
+                  <TextField fx:id="pricside" disable="true" layoutX="245.0" layoutY="181.0" prefHeight="25.0" prefWidth="45.0" style="-fx-background-radius: 30;" text=".00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="cntdix" disable="true" layoutX="245.0" layoutY="256.0" prefHeight="25.0" prefWidth="45.0" text="\%">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="lablet" layoutX="179.0" layoutY="7.0" prefHeight="31.0" prefWidth="89.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="109.0" layoutY="10.0" prefHeight="25.0" prefWidth="83.0" text="Cahier ID">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="528.0" prefWidth="692.0">
+               <children>
+                  <Separator layoutX="448.0" layoutY="3.0" orientation="VERTICAL" prefHeight="522.0" prefWidth="18.0" />
+                  <TableView fx:id="table" layoutX="1.0" layoutY="-3.0" prefHeight="349.0" prefWidth="447.0">
+                    <columns>
+                      <TableColumn fx:id="pidtable" prefWidth="66.0" text="P_ID" />
+                      <TableColumn fx:id="pnameTable" prefWidth="154.0" text="P_NAME" />
+                        <TableColumn fx:id="patyTable" prefWidth="48.0" text="P_QTY" />
+                        <TableColumn fx:id="ppxTable" prefWidth="47.0" text="P_PX" />
+                        <TableColumn fx:id="pdcnTable" prefWidth="47.0" text="P_DSC" />
+                        <TableColumn fx:id="totTable" prefWidth="88.0" text="TOTAL" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="TableTotal" layoutX="277.0" layoutY="350.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 30;" />
+                  <Label layoutX="158.0" layoutY="350.0" prefHeight="25.0" prefWidth="104.0" text="GRAND TOTAL">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="printBill" layoutX="148.0" layoutY="402.0" mnemonicParsing="false" onAction="#PrintBill" prefHeight="25.0" prefWidth="124.0" style="-fx-background-radius: 30;" text="PRINT BILL">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="table2" layoutX="457.0" layoutY="90.0" prefHeight="423.0" prefWidth="228.0">
+                    <columns>
+                      <TableColumn fx:id="BilDtae" prefWidth="107.0" text="DATE" />
+                      <TableColumn fx:id="BillNo" prefWidth="59.0" text="B_NO" />
+                        <TableColumn fx:id="BilAmount" prefWidth="59.0" text="AMT" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="searchBill" alignment="CENTER" layoutX="467.0" layoutY="56.0" prefHeight="29.0" prefWidth="210.0" promptText="SEARCH BILL" style="-fx-background-radius: 30;">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="Calcu" layoutX="46.0" layoutY="350.0" mnemonicParsing="false" onAction="#calculate" prefHeight="25.0" prefWidth="93.0" style="-fx-background-radius: 30;" text="CALCULATE" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>

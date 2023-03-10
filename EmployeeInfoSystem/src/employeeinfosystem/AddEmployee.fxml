@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="657.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeeinfosystem.AddEmployeeController">
+   <children>
+      <TabPane prefHeight="657.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Employee Information">
+               <content>
+                  <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="639.0" prefWidth="900.0">
+                     <children>
+                        <Label layoutX="198.0" layoutY="33.0" prefHeight="17.0" prefWidth="233.0" text="PERSONAL INFORMATION">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="25.0" layoutY="45.0" prefHeight="1.0" prefWidth="170.0" />
+                        <Separator layoutX="397.0" layoutY="48.0" prefHeight="0.0" prefWidth="465.0" />
+                        <Separator layoutX="22.0" layoutY="45.0" orientation="VERTICAL" prefHeight="332.0" prefWidth="1.0" style="-fx-background-color: FFF;" />
+                        <ComboBox fx:id="A1" layoutX="35.0" layoutY="58.0" prefHeight="25.0" prefWidth="126.0" promptText="TITLE" />
+                        <Label layoutX="281.0" layoutY="94.0" prefHeight="25.0" prefWidth="144.0" text="FIRSTNAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="450.0" layoutY="94.0" prefHeight="25.0" prefWidth="131.0" text="MIDDLENAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="617.0" layoutY="98.0" prefHeight="17.0" prefWidth="133.0" text="OTHERNAMES">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A2" layoutX="240.0" layoutY="58.0" promptText="FIRSTNAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A3" layoutX="410.0" layoutY="53.0" promptText="MIDDLENAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A4" layoutX="574.0" layoutY="53.0" promptText="OTHERNAMES">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A6" layoutX="240.0" layoutY="119.0" promptText="PLACE OF BIRTH">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="273.0" layoutY="154.0" prefHeight="25.0" prefWidth="110.0" text="PLACE OF BIRTH">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="158.0" prefHeight="25.0" prefWidth="143.0" text="DATE OF BIRTH">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="450.0" layoutY="162.0" prefHeight="17.0" prefWidth="123.0" text="GENDER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="630.0" layoutY="162.0" prefHeight="17.0" prefWidth="111.0" text="STATUS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="A5" layoutX="37.0" layoutY="119.0" prefHeight="25.0" prefWidth="180.0" promptText="DATE OF BIRTH" />
+                        <ComboBox fx:id="A7" layoutX="417.0" layoutY="119.0" prefWidth="150.0" promptText="GENDER" />
+                        <ComboBox fx:id="A8" layoutX="581.0" layoutY="119.0" prefWidth="150.0" promptText="STATUS" />
+                        <TextField fx:id="A9" layoutX="35.0" layoutY="190.0" prefHeight="25.0" prefWidth="355.0" promptText="POSTAL ADDRESS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A10" layoutX="410.0" layoutY="185.0" promptText="ZIPCODE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A11" layoutX="575.0" layoutY="185.0" promptText="CITIZENSHIP">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="160.0" layoutY="225.0" prefHeight="25.0" prefWidth="133.0" text="POSTAL ADDRESS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="456.0" layoutY="229.0" prefHeight="17.0" prefWidth="73.0" text="ZIPCODE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="603.0" layoutY="229.0" prefHeight="17.0" prefWidth="106.0" text="CITIZENSHIP">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A12" layoutX="36.0" layoutY="258.0" promptText="TELEPHONE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A13" layoutX="227.0" layoutY="258.0" promptText="MOBILE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A14" layoutX="417.0" layoutY="258.0" prefHeight="25.0" prefWidth="168.0" promptText="EMAIL">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A15" layoutX="617.0" layoutY="258.0" promptText="HEIGHT">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="70.0" layoutY="296.0" prefHeight="20.0" prefWidth="99.0" text="TELEPHONE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="258.0" layoutY="296.0" prefHeight="17.0" prefWidth="97.0" text="MOBILE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="464.0" layoutY="296.0" prefHeight="17.0" prefWidth="68.0" text="EMAIL">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="656.0" layoutY="296.0" prefHeight="17.0" prefWidth="76.0" text="HEIGHT">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A16" layoutX="153.0" layoutY="322.0" promptText="WEIGHT">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A17" layoutX="363.0" layoutY="322.0" prefHeight="25.0" prefWidth="183.0" promptText="SOCIAL SECURITY NUMBER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="185.0" layoutY="356.0" prefHeight="17.0" prefWidth="84.0" text="WEIGHT">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="382.0" layoutY="356.0" text="SOCIAL SECURITY NUMBER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="859.0" layoutY="47.0" orientation="VERTICAL" prefHeight="328.0" prefWidth="2.0" style="-fx-background-color: \\;" />
+                        <Separator layoutX="24.0" layoutY="374.0" prefHeight="4.0" prefWidth="837.0" />
+                        <Label layoutX="195.0" layoutY="389.0" text="FAMILY BACKGROUND">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="27.0" layoutY="400.0" prefHeight="3.0" prefWidth="171.0" />
+                        <Separator layoutX="371.0" layoutY="402.0" prefHeight="5.0" prefWidth="490.0" />
+                        <Label layoutX="35.0" layoutY="414.0" prefHeight="17.0" prefWidth="84.0" text="SPOUSE :">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A18" layoutX="111.0" layoutY="411.0" promptText="FIRSTNAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A19" layoutX="266.0" layoutY="411.0" promptText="MIDDLENAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A20" layoutX="424.0" layoutY="411.0" promptText="OTHERNAMES">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Separator layoutX="578.0" layoutY="403.0" orientation="VERTICAL" prefHeight="204.0" prefWidth="7.0" style="-fx-background-color: FFF;" />
+                        <Label layoutX="589.0" layoutY="415.0" prefHeight="19.0" prefWidth="74.0" text="CHILDREN:">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="656.0" layoutY="422.0" prefHeight="7.0" prefWidth="197.0" />
+                        <Separator layoutX="850.0" layoutY="423.0" orientation="VERTICAL" prefHeight="182.0" prefWidth="2.0" style="-fx-background-color: FFF;" />
+                        <Label layoutX="603.0" layoutY="434.0" text="FULLNAME">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="762.0" layoutY="434.0" text="BIRTHDAY">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A30" layoutX="598.0" layoutY="453.0" promptText="FULLNAME1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A32" layoutX="598.0" layoutY="482.0" promptText="FULLNAME2">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A34" layoutX="598.0" layoutY="507.0" promptText="FULLNAME3">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A36" layoutX="598.0" layoutY="532.0" promptText="FULLNAME4">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A38" layoutX="598.0" layoutY="556.0" promptText="FULLNAME5">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="586.0" layoutY="457.0" text="1" />
+                        <Label layoutX="586.0" layoutY="486.0" text="2" />
+                        <Label layoutX="586.0" layoutY="511.0" text="3" />
+                        <Label layoutX="586.0" layoutY="536.0" text="4" />
+                        <Label layoutX="586.0" layoutY="560.0" text="5" />
+                        <Separator layoutX="862.0" layoutY="403.0" orientation="VERTICAL" prefHeight="223.0" prefWidth="5.0" style="-fx-background-color: FFF;" />
+                        <DatePicker fx:id="A31" layoutX="760.0" layoutY="453.0" prefHeight="25.0" prefWidth="90.0" promptText="1" />
+                        <DatePicker fx:id="A33" layoutX="760.0" layoutY="482.0" prefHeight="25.0" prefWidth="90.0" promptText="2" />
+                        <DatePicker fx:id="A35" layoutX="759.0" layoutY="507.0" prefHeight="25.0" prefWidth="90.0" promptText="3" />
+                        <DatePicker fx:id="A37" layoutX="759.0" layoutY="532.0" prefHeight="25.0" prefWidth="90.0" promptText="4" />
+                        <DatePicker fx:id="A39" layoutX="759.0" layoutY="556.0" prefHeight="25.0" prefWidth="90.0" promptText="5" />
+                        <Label layoutX="130.0" layoutY="445.0" text="FIRSTNAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="307.0" layoutY="445.0" text="MIDDLENAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="464.0" layoutY="445.0" text="OTHERNAMES">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A22" layoutX="266.0" layoutY="462.0" promptText="OCCUPATION">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A23" layoutX="424.0" layoutY="462.0" prefHeight="30.0" prefWidth="158.0" promptText="TELEPONE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="128.0" layoutY="495.0" text="DATE OF BIRTH">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="310.0" layoutY="495.0" text="OCCUPATION">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="464.0" layoutY="495.0" text="TELEPHONE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="519.0" text="FATHER:">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A24" layoutX="111.0" layoutY="516.0" promptText="FIRSTNAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A25" layoutX="266.0" layoutY="516.0" promptText="MIDDLENAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A26" layoutX="427.0" layoutY="511.0" prefHeight="30.0" prefWidth="153.0" promptText="OTHERNAMES">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="130.0" layoutY="552.0" text="FIRSTNAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="307.0" layoutY="549.0" text="MIDDLENAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="464.0" layoutY="545.0" text="OTHERNAMES">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="569.0" text="MOTHER:">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A27" layoutX="111.0" layoutY="569.0" promptText="FIRSTNAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A28" layoutX="266.0" layoutY="569.0" promptText="MIDDLENAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="A29" layoutX="424.0" layoutY="566.0" prefHeight="30.0" prefWidth="157.0" promptText="OTHERNAMES">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="128.0" layoutY="606.0" text="FIRSTNAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="301.0" layoutY="606.0" text="MIDDLENAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="473.0" layoutY="606.0" text="OTHERNAMES">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="A21" layoutX="78.0" layoutY="466.0" prefHeight="25.0" prefWidth="164.0" promptText="DATE OF BIRTH" />
+                        <Separator layoutX="22.0" layoutY="399.0" orientation="VERTICAL" prefHeight="227.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="84.0" layoutY="529.0" prefHeight="0.0" prefWidth="26.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="97.0" layoutY="575.0" prefHeight="8.0" prefWidth="13.0" />
+                        <Button fx:id="back" layoutX="24.0" layoutY="8.0" mnemonicParsing="false" onAction="#gabak" prefHeight="25.0" prefWidth="81.0" text="BACK" />
+                        <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true">
+                           <image>
+                              <Image url="/image/G1.png" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="582.0" layoutY="605.0" prefHeight="1.0" prefWidth="271.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Education Background">
+               <content>
+                  <AnchorPane fx:id="goback2" onDragDetected="#Goback1" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="143.0" layoutY="37.0" prefHeight="25.0" prefWidth="238.0" text="EDUCATIONAL BACKGROUND">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="14.0" layoutY="46.0" prefHeight="5.0" prefWidth="129.0" />
+                        <Separator layoutX="372.0" layoutY="48.0" prefHeight="2.0" prefWidth="494.0" />
+                        <Button fx:id="back1" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#gabak" prefHeight="25.0" prefWidth="81.0" text="BACK" />
+                        <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="22.0" layoutY="18.0" pickOnBounds="true">
+                           <image>
+                              <Image url="/image/G1.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="101.0" layoutY="76.0" text="ELEMENTARY">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="44.0" layoutY="84.0" prefHeight="2.0" prefWidth="54.0" />
+                        <Separator layoutX="182.0" layoutY="83.0" prefHeight="1.0" prefWidth="660.0" />
+                        <Label layoutX="115.0" layoutY="104.0" text="NAME OF SCHOOL">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A40" layoutX="115.0" layoutY="123.0" prefHeight="25.0" prefWidth="271.0" promptText="NAME OF SCHOOL">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Separator layoutX="229.0" layoutY="114.0" prefHeight="2.0" prefWidth="200.0" />
+                        <Separator layoutX="69.0" layoutY="112.0" prefHeight="3.0" prefWidth="48.0" />
+                        <Separator layoutX="68.0" layoutY="115.0" orientation="VERTICAL" prefHeight="54.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="72.0" layoutY="159.0" prefHeight="15.0" prefWidth="711.0" />
+                        <Separator layoutX="426.0" layoutY="112.0" orientation="VERTICAL" prefHeight="53.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Label layoutX="436.0" layoutY="104.0" text="DEGREE COURSE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A41" disable="true" layoutX="450.0" layoutY="125.0" prefHeight="25.0" prefWidth="240.0" text="PRIMARY/JSS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Separator layoutX="535.0" layoutY="111.0" prefHeight="6.0" prefWidth="249.0" />
+                        <Separator layoutX="781.0" layoutY="111.0" orientation="VERTICAL" prefHeight="58.0" prefWidth="3.0" style="-fx-background-color: FFF;" />
+                        <Label layoutX="115.0" layoutY="174.0" text="DATE OF ATTENDANCE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="436.0" layoutY="175.0" text="GRADUATION DATE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="257.0" layoutY="182.0" prefHeight="2.0" prefWidth="177.0" />
+                        <Separator layoutX="68.0" layoutY="181.0" prefHeight="2.0" prefWidth="46.0" />
+                        <Separator layoutX="70.0" layoutY="179.0" orientation="VERTICAL" prefHeight="67.0" prefWidth="5.0" style="-fx-background-color: FFF;" />
+                        <Label layoutX="126.0" layoutY="193.0" text="FROM">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="312.0" layoutY="193.0" text="TO">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="A42" layoutX="76.0" layoutY="212.0" prefHeight="25.0" prefWidth="133.0" promptText="FROM" />
+                        <DatePicker fx:id="A43" layoutX="276.0" layoutY="212.0" prefHeight="25.0" prefWidth="106.0" promptText="TO" />
+                        <Separator layoutX="423.0" layoutY="179.0" orientation="VERTICAL" prefHeight="68.0" prefWidth="7.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="72.0" layoutY="246.0" prefHeight="1.0" prefWidth="709.0" />
+                        <DatePicker fx:id="A44" layoutX="483.0" layoutY="212.0" prefHeight="25.0" prefWidth="236.0" promptText="DRADUATION DATE" />
+                        <Separator layoutX="41.0" layoutY="84.0" orientation="VERTICAL" prefHeight="177.0" prefWidth="5.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="43.0" layoutY="261.0" prefHeight="7.0" prefWidth="794.0" />
+                        <Separator layoutX="839.0" layoutY="81.0" orientation="VERTICAL" prefHeight="181.0" prefWidth="4.0" style="-fx-background-color: FFF;" />
+                        <Label layoutX="103.0" layoutY="277.0" text="SECONDARY">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="115.0" layoutY="305.0" text="NAME OF SCHOOL">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A45" layoutX="114.0" layoutY="324.0" prefHeight="25.0" prefWidth="271.0" promptText="NAME OF SCHOOL">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="113.0" layoutY="370.0" text="DATE OF ATTENDANCE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="126.0" layoutY="389.0" text="FROM">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="312.0" layoutY="389.0" text="TO">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="A47" layoutX="94.0" layoutY="406.0" prefHeight="25.0" prefWidth="133.0" promptText="FROM" />
+                        <DatePicker fx:id="A48" layoutX="276.0" layoutY="406.0" prefHeight="25.0" prefWidth="106.0" promptText="TO" />
+                        <Label layoutX="436.0" layoutY="307.0" text="DEGREE COURSE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="436.0" layoutY="372.0" text="GRADUATION DATE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="A49" layoutX="487.0" layoutY="394.0" prefHeight="25.0" prefWidth="236.0" promptText="DRADUATION DATE" />
+                        <Separator layoutX="42.0" layoutY="285.0" prefHeight="0.0" prefWidth="62.0" />
+                        <Separator layoutX="74.0" layoutY="313.0" prefHeight="2.0" prefWidth="39.0" />
+                        <Separator layoutX="73.0" layoutY="378.0" prefHeight="0.0" prefWidth="39.0" />
+                        <Separator layoutX="182.0" layoutY="280.0" prefHeight="8.0" prefWidth="658.0" />
+                        <Separator layoutX="224.0" layoutY="313.0" prefHeight="2.0" prefWidth="196.0" />
+                        <Separator layoutX="423.0" layoutY="313.0" orientation="VERTICAL" prefHeight="52.0" prefWidth="0.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="74.0" layoutY="361.0" prefHeight="3.0" prefWidth="708.0" />
+                        <Separator layoutX="76.0" layoutY="314.0" orientation="VERTICAL" prefHeight="49.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="535.0" layoutY="314.0" prefHeight="8.0" prefWidth="249.0" />
+                        <Separator layoutX="778.0" layoutY="314.0" orientation="VERTICAL" prefHeight="52.0" prefWidth="5.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="72.0" layoutY="442.0" prefHeight="0.0" prefWidth="708.0" />
+                        <Separator layoutX="73.0" layoutY="380.0" orientation="VERTICAL" prefHeight="64.0" prefWidth="5.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="256.0" layoutY="380.0" prefHeight="3.0" prefWidth="167.0" />
+                        <Separator layoutX="420.0" layoutY="380.0" orientation="VERTICAL" prefHeight="62.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="43.0" layoutY="453.0" prefHeight="4.0" prefWidth="798.0" />
+                        <Separator layoutX="39.0" layoutY="284.0" orientation="VERTICAL" prefHeight="167.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="838.0" layoutY="285.0" orientation="VERTICAL" prefHeight="171.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Label layoutX="103.0" layoutY="465.0" text="TERTIARY">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="103.0" layoutY="490.0" text="NAME OF COLLEGE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A50" layoutX="114.0" layoutY="507.0" prefHeight="25.0" prefWidth="271.0" promptText="NAME OF COLLEGE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="109.0" layoutY="553.0" text="DATE OF ATTENDANCE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="126.0" layoutY="573.0" text="FROM">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="304.0" layoutY="573.0" text="TO">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="A53" layoutX="239.0" layoutY="594.0" prefHeight="25.0" prefWidth="133.0" promptText="FROM" />
+                        <DatePicker fx:id="A52" layoutX="107.0" layoutY="594.0" prefHeight="25.0" prefWidth="106.0" promptText="TO" />
+                        <Label layoutX="436.0" layoutY="490.0" text="DEGREE COURSE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="A46" layoutX="483.0" layoutY="328.0" prefHeight="25.0" prefWidth="238.0" promptText="SELECT COURSE" />
+                        <TextField fx:id="A51" layoutX="487.0" layoutY="510.0" prefHeight="30.0" prefWidth="265.0" promptText="PROGRAMME OFFERED IN COLLEGE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="436.0" layoutY="553.0" text="GRADUATION DATE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="A54" layoutX="483.0" layoutY="582.0" prefHeight="25.0" prefWidth="236.0" promptText="DRADUATION DATE" />
+                        <Separator layoutX="162.0" layoutY="468.0" prefHeight="12.0" prefWidth="660.0" />
+                        <Separator layoutX="837.0" layoutY="472.0" orientation="VERTICAL" prefHeight="150.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="221.0" layoutY="498.0" prefHeight="3.0" prefWidth="219.0" />
+                        <Separator layoutX="76.0" layoutY="545.0" prefHeight="8.0" prefWidth="349.0" />
+                        <Separator layoutX="423.0" layoutY="498.0" orientation="VERTICAL" prefHeight="123.0" prefWidth="3.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="73.0" layoutY="496.0" orientation="VERTICAL" prefHeight="123.0" prefWidth="5.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="76.0" layoutY="498.0" prefHeight="3.0" prefWidth="29.0" />
+                        <Separator layoutX="426.0" layoutY="548.0" prefHeight="4.0" prefWidth="347.0" />
+                        <Separator layoutX="779.0" layoutY="474.0" orientation="VERTICAL" prefHeight="149.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="38.0" layoutY="474.0" orientation="VERTICAL" prefHeight="152.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="38.0" layoutY="473.0" prefHeight="0.0" prefWidth="67.0" />
+                        <Separator layoutX="39.0" layoutY="621.0" prefHeight="1.0" prefWidth="798.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Working Experience">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="157.0" layoutY="33.0" text="WORKING EXPERIENCE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="back3" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#Goback1" prefHeight="25.0" prefWidth="81.0" text="BACK" />
+                        <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="30.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/image/G1.png" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="12.0" layoutY="44.0" prefHeight="3.0" prefWidth="146.0" />
+                        <Separator layoutX="332.0" layoutY="44.0" prefHeight="5.0" prefWidth="370.0" />
+                        <Label layoutX="80.0" layoutY="57.0" text="WORK 1">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="41.0" layoutY="163.0" prefHeight="2.0" prefWidth="708.0" />
+                        <Separator layoutX="122.0" layoutY="66.0" prefHeight="6.0" prefWidth="626.0" />
+                        <Separator layoutX="745.0" layoutY="71.0" orientation="VERTICAL" prefHeight="90.0" prefWidth="4.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="47.0" layoutY="57.0" orientation="VERTICAL" prefHeight="104.0" prefWidth="5.0" />
+                        <Separator layoutX="43.0" layoutY="65.0" prefHeight="4.0" prefWidth="37.0" />
+                        <Separator layoutX="39.0" layoutY="66.0" orientation="VERTICAL" prefHeight="98.0" prefWidth="4.0" style="-fx-background-color: FFF;" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="157.0" layoutY="33.0" text="WORKING EXPERIENCE">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="back31" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#gabak" prefHeight="25.0" prefWidth="81.0" text="BACK">
+                                 <graphic>
+                                    <ImageView fitHeight="13.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="/image/G1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Separator layoutX="12.0" layoutY="44.0" prefHeight="3.0" prefWidth="146.0" />
+                              <Separator layoutX="332.0" layoutY="44.0" prefHeight="5.0" prefWidth="524.0" />
+                              <TabPane layoutX="62.0" layoutY="81.0" prefHeight="63.0" prefWidth="542.0" tabClosingPolicy="UNAVAILABLE">
+                                 <tabs>
+                                    <Tab text="COMPANY">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="34.0" prefWidth="296.0">
+                                             <children>
+                                                <TextField layoutX="7.0" layoutY="2.0" prefHeight="25.0" prefWidth="367.0" promptText="NAME OF COMPANY">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="POSITION">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField layoutY="2.0" prefHeight="25.0" prefWidth="356.0" promptText="POSITION IN COMPANY">
+                                                   <font>
+                                                      <Font name="System Bold" size="15.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="DEPARTMENT">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <TextField layoutY="2.0" prefHeight="25.0" prefWidth="315.0" promptText="DEPARTMENT">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="INCLUSIVE DATES">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="6.0" text="FROM">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="257.0" layoutY="7.0" text="TO">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker layoutX="60.0" layoutY="5.0" promptText="FROM" />
+                                                <DatePicker layoutX="294.0" layoutY="2.0" promptText="TO" />
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab text="STATUS">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </Tab>
+                                    <Tab text="SALARY PER MONTH">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </Tab>
+                                 </tabs>
+                              </TabPane>
+                              <Label layoutX="80.0" layoutY="57.0" text="WORK 1">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="41.0" layoutY="163.0" prefHeight="2.0" prefWidth="708.0" />
+                              <Separator layoutX="122.0" layoutY="66.0" prefHeight="6.0" prefWidth="626.0" />
+                              <Separator layoutX="745.0" layoutY="71.0" orientation="VERTICAL" prefHeight="94.0" prefWidth="2.0" style="-fx-background-color: FFF;" />
+                              <Separator layoutX="47.0" layoutY="57.0" orientation="VERTICAL" prefHeight="104.0" prefWidth="5.0" />
+                              <Separator layoutX="43.0" layoutY="65.0" prefHeight="4.0" prefWidth="37.0" />
+                              <Separator layoutX="39.0" layoutY="66.0" orientation="VERTICAL" prefHeight="98.0" prefWidth="4.0" style="-fx-background-color: FFF;" />
+                              <Separator layoutX="128.0" layoutY="185.0" prefHeight="11.0" prefWidth="615.0" />
+                              <Label layoutX="90.0" layoutY="178.0" text="WORK 2">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="11.0" layoutY="44.0" orientation="VERTICAL" prefHeight="559.0" prefWidth="5.0" style="-fx-background-color: FFF;" />
+                              <Separator layoutX="14.0" layoutY="601.0" prefHeight="4.0" prefWidth="841.0" />
+                           </children>
+                        </AnchorPane>
+                        <TabPane layoutX="62.0" layoutY="81.0" prefHeight="63.0" prefWidth="542.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="COMPANY">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="34.0" prefWidth="296.0">
+                                       <children>
+                                          <TextField fx:id="A55" layoutX="7.0" layoutY="2.0" prefHeight="25.0" prefWidth="367.0" promptText="NAME OF COMPANY">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="POSITION">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A56" layoutY="2.0" prefHeight="25.0" prefWidth="356.0" promptText="POSITION IN COMPANY">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="DEPARTMENT">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A57" layoutY="2.0" prefHeight="25.0" prefWidth="315.0" promptText="DEPARTMENT">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="INCLUSIVE DATES">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="6.0" text="FROM">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="257.0" layoutY="7.0" text="TO">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker fx:id="A58" layoutX="60.0" layoutY="5.0" promptText="FROM" />
+                                          <DatePicker fx:id="A59" layoutX="294.0" layoutY="2.0" promptText="TO" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="STATUS">
+                                 <content>
+                                    <TextField fx:id="A60" prefHeight="32.0" prefWidth="542.0" promptText="STATUS">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </content>
+                              </Tab>
+                              <Tab text="SALARY PER MONTH">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A61" layoutX="8.0" layoutY="3.0" prefHeight="30.0" prefWidth="367.0" promptText="SALARY PER MONTH">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children></AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                        <TabPane layoutX="62.0" layoutY="212.0" prefHeight="63.0" prefWidth="542.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="COMPANY">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="34.0" prefWidth="296.0">
+                                       <children>
+                                          <TextField fx:id="A62" layoutX="7.0" layoutY="2.0" prefHeight="25.0" prefWidth="367.0" promptText="NAME OF COMPANY">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="POSITION">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A63" layoutY="2.0" prefHeight="25.0" prefWidth="356.0" promptText="POSITION IN COMPANY">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="DEPARTMENT">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A64" layoutY="2.0" prefHeight="25.0" prefWidth="315.0" promptText="DEPARTMENT">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="INCLUSIVE DATES">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="6.0" text="FROM">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="257.0" layoutY="7.0" text="TO">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker fx:id="A65" layoutX="60.0" layoutY="5.0" promptText="FROM" />
+                                          <DatePicker fx:id="A66" layoutX="294.0" layoutY="2.0" promptText="TO" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="STATUS">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A67" layoutY="2.0" prefHeight="29.0" prefWidth="343.0" promptText="STATUS">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children></AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="SALARY PER MONTH">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A68" layoutX="7.0" layoutY="2.0" prefHeight="31.0" prefWidth="381.0" promptText="SALARY PER MONTH">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children></AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                        <TabPane layoutX="61.0" layoutY="345.0" prefHeight="63.0" prefWidth="542.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="COMPANY">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="34.0" prefWidth="296.0">
+                                       <children>
+                                          <TextField fx:id="A69" layoutX="7.0" layoutY="2.0" prefHeight="25.0" prefWidth="367.0" promptText="NAME OF COMPANY">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="POSITION">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A70" layoutY="2.0" prefHeight="25.0" prefWidth="356.0" promptText="POSITION IN COMPANY">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="DEPARTMENT">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A71" layoutY="2.0" prefHeight="25.0" prefWidth="315.0" promptText="DEPARTMENT">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="INCLUSIVE DATES">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="6.0" text="FROM">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="257.0" layoutY="7.0" text="TO">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker fx:id="A72" layoutX="60.0" layoutY="5.0" promptText="FROM" />
+                                          <DatePicker fx:id="A73" layoutX="294.0" layoutY="2.0" promptText="TO" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="STATUS">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A74" layoutX="3.0" layoutY="2.0" prefHeight="31.0" prefWidth="382.0" promptText="STATUS">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children></AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="A75" text="SALARY PER MONTH">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField layoutY="2.0" prefHeight="31.0" prefWidth="397.0" promptText="SALARY PER MONTH">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children></AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                        <Label layoutX="80.0" layoutY="305.0" text="WORK 3">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="71.0" layoutY="426.0" text="WORK 4">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TabPane layoutX="61.0" layoutY="465.0" prefHeight="63.0" prefWidth="542.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="COMPANY">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="34.0" prefWidth="296.0">
+                                       <children>
+                                          <TextField fx:id="A76" layoutX="7.0" layoutY="2.0" prefHeight="25.0" prefWidth="367.0" promptText="NAME OF COMPANY">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="POSITION">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A77" layoutY="2.0" prefHeight="25.0" prefWidth="356.0" promptText="POSITION IN COMPANY">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="DEPARTMENT">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A78" layoutY="2.0" prefHeight="25.0" prefWidth="315.0" promptText="DEPARTMENT">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="INCLUSIVE DATES">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="6.0" text="FROM">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="257.0" layoutY="7.0" text="TO">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker fx:id="A79" layoutX="60.0" layoutY="5.0" promptText="FROM" />
+                                          <DatePicker fx:id="A80" layoutX="294.0" layoutY="2.0" promptText="TO" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="STATUS">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A81" prefHeight="33.0" prefWidth="395.0" promptText="STATUS">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children></AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="SALARY PER MONTH">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="A82" layoutX="3.0" layoutY="5.0" prefHeight="25.0" prefWidth="401.0" promptText="SALARY PER MONTH">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children></AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                        <Separator layoutX="133.0" layoutY="313.0" prefHeight="0.0" prefWidth="610.0" />
+                        <Separator layoutX="119.0" layoutY="430.0" prefHeight="10.0" prefWidth="627.0" />
+                        <Separator layoutX="744.0" layoutY="166.0" orientation="VERTICAL" prefHeight="389.0" prefWidth="4.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="43.0" layoutY="551.0" prefHeight="3.0" prefWidth="701.0" />
+                        <Separator layoutX="38.0" layoutY="124.0" orientation="VERTICAL" prefHeight="428.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="853.0" layoutY="44.0" orientation="VERTICAL" prefHeight="552.0" prefWidth="10.0" style="-fx-background-color: FFF;" />
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+            <Tab text="Position / Compensation">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="129.0" layoutY="40.0" text="JOB TITLE / SALARY GRADE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="back311" layoutX="26.0" layoutY="14.0" mnemonicParsing="false" onAction="#gabak" prefHeight="25.0" prefWidth="81.0" text="BACK" />
+                        <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="32.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/image/G1.png" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="12.0" layoutY="49.0" prefHeight="8.0" prefWidth="121.0" />
+                        <Separator layoutX="338.0" layoutY="52.0" prefHeight="0.0" prefWidth="493.0" />
+                        <Label layoutX="107.0" layoutY="81.0" text="POSITION">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="107.0" layoutY="168.0" text="DEPARTMENT">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A83" layoutX="120.0" layoutY="112.0" prefHeight="25.0" prefWidth="217.0" promptText="POSITION">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="A84" layoutX="119.0" layoutY="200.0" prefHeight="25.0" prefWidth="218.0" promptText="DEPARTMENT" />
+                        <Label layoutX="105.0" layoutY="259.0" text="EMPLOYEE NO">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="A85" layoutX="205.0" layoutY="256.0" prefHeight="25.0" prefWidth="86.0" promptText="D.INIT" />
+                        <TextField fx:id="A86" layoutX="301.0" layoutY="256.0" prefHeight="25.0" prefWidth="57.0" promptText="ID NUMBER" />
+                        <Separator layoutX="427.0" layoutY="76.0" orientation="VERTICAL" prefHeight="242.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="430.0" layoutY="317.0" prefHeight="3.0" prefWidth="374.0" />
+                        <Separator layoutX="427.0" layoutY="75.0" prefHeight="1.0" prefWidth="374.0" />
+                        <Separator layoutX="801.0" layoutY="76.0" orientation="VERTICAL" prefHeight="243.0" prefWidth="7.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="169.0" layoutY="90.0" prefHeight="3.0" prefWidth="258.0" />
+                        <Separator layoutX="192.0" layoutY="176.0" prefHeight="4.0" prefWidth="234.0" />
+                        <Separator layoutX="359.0" layoutY="267.0" prefHeight="4.0" prefWidth="70.0" />
+                        <Separator layoutX="49.0" layoutY="313.0" prefHeight="2.0" prefWidth="381.0" />
+                        <Separator layoutX="46.0" layoutY="89.0" orientation="VERTICAL" prefHeight="224.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="48.0" layoutY="89.0" prefHeight="0.0" prefWidth="63.0" />
+                        <Separator layoutX="11.0" layoutY="53.0" orientation="VERTICAL" prefHeight="314.0" prefWidth="5.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="828.0" layoutY="51.0" orientation="VERTICAL" prefHeight="318.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+                        <Separator layoutX="14.0" layoutY="368.0" prefHeight="5.0" prefWidth="816.0" />
+                        <Label layoutX="472.0" layoutY="104.0" text="SALARY GRADE">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="A87" layoutX="614.0" layoutY="100.0" prefHeight="25.0" prefWidth="132.0" promptText="SALARY GRAGE" />
+                        <TextField fx:id="A88" layoutX="472.0" layoutY="151.0" prefHeight="25.0" prefWidth="141.0" />
+                        <Label layoutX="625.0" layoutY="155.0" text="/ MONTH">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="RSET" layoutX="468.0" layoutY="281.0" mnemonicParsing="false" onAction="#RESETDATA" prefHeight="25.0" prefWidth="91.0" style="-fx-text-fill: RED; -fx-background-radius: 30;" text="RESET" />
+                        <Button fx:id="Add" layoutX="599.0" layoutY="281.0" mnemonicParsing="false" onAction="#INSETDATA" style="-fx-text-fill: RED; -fx-background-radius: 39;" text="ADD EMPLOYEE" />
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

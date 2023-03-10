@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="236.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeeinfosystem.FXMLDocumentController">
+   <children>
+      <Separator layoutY="60.0" prefHeight="14.0" prefWidth="380.0" />
+      <Label layoutY="74.0" prefHeight="17.0" prefWidth="380.0" text="                  EMPLOYEE MANAGEMENT SYSTEM" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-1.0" layoutY="93.0" prefHeight="3.0" prefWidth="380.0" />
+      <Label layoutX="58.0" layoutY="110.0" prefHeight="30.0" prefWidth="124.0" text="USERNAME">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="148.0" prefHeight="30.0" prefWidth="124.0" text="PASSWORD">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField layoutX="137.0" layoutY="113.0" prefHeight="25.0" prefWidth="164.0" promptText="USERNAME">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="137.0" layoutY="151.0" prefHeight="25.0" prefWidth="164.0" promptText="PASSWORD">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="45.0" layoutY="93.0" orientation="VERTICAL" prefHeight="94.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+      <Separator layoutX="318.0" layoutY="93.0" orientation="VERTICAL" prefHeight="94.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+      <Separator layoutX="46.0" layoutY="181.0" prefHeight="14.0" prefWidth="275.0" />
+      <Button layoutX="137.0" layoutY="195.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="237.0" layoutY="195.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="NEW USER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Separator layoutX="11.0" layoutY="95.0" orientation="VERTICAL" prefHeight="142.0" prefWidth="6.0" style="-fx-background-color: FFF;" />
+      <Separator layoutX="371.0" layoutY="94.0" orientation="VERTICAL" prefHeight="142.0" prefWidth="6.0" />
+      <ImageView fitHeight="61.0" fitWidth="76.0" layoutX="19.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="18.68041229248047" AnchorPane.rightAnchor="280.31958770751953" AnchorPane.topAnchor="1.0">
+         <image>
+            <Image url="/image/g2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="147.0" layoutY="19.0" prefHeight="37.0" prefWidth="219.0" text="OGUA LIMITED" textFill="#3011c6">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="NUES" layoutX="32.0" layoutY="195.0" mnemonicParsing="false" onAction="#TRYMAIN" prefHeight="25.0" prefWidth="21.0" text="Button" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8cc914dd-58ff-43bf-9e00-5acfb243d836">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     bill_t.`id` AS bill_t_id,
+     bill_t.`CashierID` AS bill_t_CashierID,
+     bill_t.`BillId` AS bill_t_BillId,
+     bill_t.`total` AS bill_t_total,
+     bill_t.`date` AS bill_t_date,
+     bill_t.`datetime` AS bill_t_datetime
+FROM
+     `bill_t` bill_t]]>
+	</queryString>
+	<field name="bill_t_CashierID" class="java.lang.Integer"/>
+	<field name="bill_t_BillId" class="java.lang.Integer"/>
+	<field name="bill_t_total" class="java.lang.Float"/>
+	<field name="bill_t_date" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="12" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="18" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="138" height="20" uuid="ed563d86-7cff-47bb-99f4-8742c4e90b18"/>
+				<text><![CDATA[bill_t_CashierID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="138" height="20" uuid="5daddd09-be3a-45da-b0b8-70aa2e65c0eb"/>
+				<text><![CDATA[bill_t_BillId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="138" height="20" uuid="65438104-5e7e-4fb7-8000-45bbf45b13a3"/>
+				<text><![CDATA[bill_t_total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="138" height="20" uuid="b8d274cd-767f-4379-bcad-8ff37677c87e"/>
+				<text><![CDATA[bill_t_date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="138" height="20" uuid="27e069f8-7647-4f93-8cc4-8318ba1805ff"/>
+				<textFieldExpression><![CDATA[$F{bill_t_CashierID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="138" height="20" uuid="16d01b35-67a9-450f-a78e-1ccf2fdf071e"/>
+				<textFieldExpression><![CDATA[$F{bill_t_BillId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="138" height="20" uuid="4171a89a-283f-47be-9ce4-70b326223c53"/>
+				<textFieldExpression><![CDATA[$F{bill_t_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="138" height="20" uuid="85da3b89-7561-48a3-b7d9-7d828dcf257b"/>
+				<textFieldExpression><![CDATA[$F{bill_t_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="11" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="60" splitType="Stretch">
+			<image>
+				<reportElement x="195" y="10" width="100" height="50" uuid="4a8df47e-fcb0-400b-83ba-43b41787265c"/>
+				<imageExpression><![CDATA[new com.onbarcode.barcode.jasper.JasperRenderer( com.onbarcode.barcode.jasper.BarcodeGenerator.draw(2, "12345", "", "X=2&Y=60"))]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="10" splitType="Stretch"/>
+	</summary>
+</jasperReport>

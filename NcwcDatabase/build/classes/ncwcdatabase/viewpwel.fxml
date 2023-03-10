@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="617.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ncwcdatabase.ViewpwelController">
+   <children>
+      <HBox>
+         <children>
+            <Label prefHeight="34.0" prefWidth="424.0" text="WELFARE MEMBER INFORMATION TABLE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/image/12.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="22.0" top="34.0" />
+               </HBox.margin>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <Region prefHeight="126.0" prefWidth="85.0" />
+            <ImageView fx:id="imageviews" fitHeight="124.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox fillHeight="false" prefHeight="491.0" prefWidth="638.0">
+         <children>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="655.0">
+               <left>
+                  <TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#getdatafromtabele" prefHeight="207.0" prefWidth="632.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="c1" prefWidth="52.0" text="ID" />
+                      <TableColumn fx:id="c2" prefWidth="61.0" text="CARDID" />
+                        <TableColumn fx:id="c3" prefWidth="84.0" text="FIRSTNAME" />
+                        <TableColumn fx:id="c4" prefWidth="103.0" text="OTHERNAMES" />
+                        <TableColumn fx:id="c5" prefWidth="75.0" text="MONTH" />
+                        <TableColumn fx:id="c6" prefWidth="75.0" text="AMOUNT" />
+                        <TableColumn fx:id="c7" prefWidth="75.0" text="YEAR" />
+                        <TableColumn fx:id="c8" prefWidth="106.0" text="DATE" />
+                    </columns>
+                     <BorderPane.margin>
+                        <Insets left="15.0" />
+                     </BorderPane.margin>
+                  </TableView>
+               </left>
+               <bottom>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox>
+                           <children>
+                              <TextField fx:id="IDsearch" alignment="CENTER" prefHeight="49.0" prefWidth="321.0" promptText="TYPE  CARDID  TO SEARCH">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Region prefHeight="30.0" prefWidth="80.0" HBox.hgrow="ALWAYS" />
+                              <Button fx:id="searchda" mnemonicParsing="false" onAction="#searchdata" prefHeight="30.0" prefWidth="191.0" text="Button">
+                                 <HBox.margin>
+                                    <Insets right="30.0" top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="234.0" prefWidth="638.0">
+                           <children>
+                              <GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="540.0" vgap="10.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="53.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="147.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="0.0" prefWidth="0.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="137.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="163.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TextField fx:id="c21" prefHeight="30.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="c31" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <TextField fx:id="c11" GridPane.rowIndex="1" />
+                                    <TextField fx:id="c51" GridPane.rowIndex="3" />
+                                    <TextField fx:id="c61" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <TextField fx:id="c71" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <TextField fx:id="c41" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <TextField fx:id="c81" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                    <Label prefHeight="26.0" prefWidth="53.0" text="ID" />
+                                    <Label prefHeight="30.0" prefWidth="147.0" text="CARDID" GridPane.columnIndex="1" />
+                                    <Label prefHeight="30.0" prefWidth="137.0" text="FIRSTNAME" GridPane.columnIndex="3" />
+                                    <Label prefHeight="29.0" prefWidth="163.0" text="OTHERNAMES" GridPane.columnIndex="4" />
+                                    <Label prefHeight="26.0" prefWidth="52.0" text="MON" GridPane.rowIndex="2" />
+                                    <Label prefHeight="27.0" prefWidth="147.0" text="AMOUNT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label prefHeight="27.0" prefWidth="137.0" text="YEAR" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Label prefHeight="26.0" prefWidth="163.0" text="DATE &amp; TIME" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                    <Button fx:id="pwelfare" minHeight="-Infinity" mnemonicParsing="false" onAction="#PrintWelfareReport" prefHeight="30.0" prefWidth="167.0" text="PRINT EXCEL REPORT" GridPane.columnSpan="3" GridPane.rowIndex="4">
+                                       <graphic>
+                                          <ImageView fitHeight="22.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="/image/print.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="JrEPORT" mnemonicParsing="false" onAction="#JasperReport" prefHeight="30.0" prefWidth="190.0" text="PRINT NORMAL REPORT" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                                       <graphic>
+                                          <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="/image/print.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="DELECT" mnemonicParsing="false" onAction="#DELECTQERY" prefHeight="30.0" prefWidth="86.0" text="DELECT" textFill="#f20b0b" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets left="60.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="60.0" top="20.0" />
+                                 </HBox.margin>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </bottom>
+            </BorderPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

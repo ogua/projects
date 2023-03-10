@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a330bfa0-0a16-4da7-862d-163618a5c038">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="77"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ENTER NAME" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tithe.`ID` AS tithe_ID,
+     tithe.`CARDID` AS tithe_CARDID,
+     tithe.`FIRSTNAME` AS tithe_FIRSTNAME,
+     tithe.`OTHER_NAMES` AS tithe_OTHER_NAMES,
+     tithe.`MON` AS tithe_MON,
+     tithe.`AMOUNT` AS tithe_AMOUNT,
+     tithe.`YEAR` AS tithe_YEAR,
+     tithe.`DATE` AS tithe_DATE
+FROM
+     `tithe` tithe]]>
+	</queryString>
+	<field name="tithe_ID" class="java.lang.Integer"/>
+	<field name="tithe_CARDID" class="java.lang.String"/>
+	<field name="tithe_FIRSTNAME" class="java.lang.String"/>
+	<field name="tithe_OTHER_NAMES" class="java.lang.String"/>
+	<field name="tithe_MON" class="java.lang.String"/>
+	<field name="tithe_AMOUNT" class="java.lang.String"/>
+	<field name="tithe_YEAR" class="java.lang.String"/>
+	<field name="tithe_DATE" class="java.sql.Timestamp"/>
+	<group name="tithe_ID">
+		<groupExpression><![CDATA[$F{tithe_ID}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="76" splitType="Stretch">
+			<staticText>
+				<reportElement x="47" y="25" width="417" height="31" uuid="d425f426-845b-4f87-8623-d3b0ad54fc06"/>
+				<textElement textAlignment="Justified">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WELCOME TO NEW COVENANT WORSHIP CENTER]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="452" y="56" width="100" height="20" uuid="67054a9e-993c-442e-9629-63cdd1fc361f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="47" y="0" width="144" height="24" uuid="dac3e48c-4981-4ce9-b7f9-7e0a263730ce"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Tithe Information]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="69" height="20" uuid="2a6fc524-ca93-408a-bd46-4c44fad8549c"/>
+				<text><![CDATA[  tD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="0" width="69" height="20" uuid="b3ed44c4-4d9a-4d0e-8a42-cf2e13569ccc"/>
+				<text><![CDATA[CARDID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="69" height="20" uuid="66875784-d664-432f-a445-487640636b52"/>
+				<text><![CDATA[FIRSTNAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="0" width="69" height="20" uuid="3dc66b46-e6b8-4ac5-a94d-03dd20cb151e"/>
+				<text><![CDATA[OTHER_NAMES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="69" height="20" uuid="bd9d8eb3-042c-4b29-aff1-6fa2880eb066"/>
+				<text><![CDATA[   MOUNTH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="0" width="69" height="20" uuid="507e941c-caaf-46a2-838d-1ebafc577b89"/>
+				<text><![CDATA[AMOUNT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="69" height="20" uuid="405bd7fc-68e2-44ae-aa59-fe719cc665ea"/>
+				<text><![CDATA[YEAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="0" width="69" height="20" uuid="a3d053e1-1da7-47d1-b78b-59110124c1d5"/>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="69" height="20" uuid="d352bc06-8f2c-49f1-b0d1-8ea9e1c843ff"/>
+				<textFieldExpression><![CDATA[$F{tithe_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="0" width="69" height="20" uuid="128c7fb8-357f-4acd-8209-5ecaf2719727"/>
+				<textFieldExpression><![CDATA[$F{tithe_CARDID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="69" height="20" uuid="f1bf75bf-1837-42f3-9773-f3cd6f7bb5a9"/>
+				<textFieldExpression><![CDATA[$F{tithe_FIRSTNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="0" width="69" height="20" uuid="25dcd917-20b1-4a14-b3c1-7f84ec7e363b"/>
+				<textFieldExpression><![CDATA[$F{tithe_OTHER_NAMES}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="69" height="20" uuid="3ae37f72-1a44-4f90-a473-116b5b6e6326"/>
+				<textFieldExpression><![CDATA[$F{tithe_MON}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="69" height="20" uuid="7d7f75c3-7e0f-4b9f-a798-9c46279bf219"/>
+				<textFieldExpression><![CDATA[$F{tithe_AMOUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="69" height="20" uuid="0d8542c3-0d74-4f20-9299-91430ef80f72"/>
+				<textFieldExpression><![CDATA[$F{tithe_YEAR}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="0" width="69" height="20" uuid="267f4fad-d6f6-4231-861c-d6aea304e4a1"/>
+				<textFieldExpression><![CDATA[$F{tithe_DATE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="5" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement x="432" y="3" width="80" height="20" uuid="f03fef8d-000b-4506-b039-8ea0383c395a"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="512" y="3" width="40" height="20" uuid="400cfe71-c96d-4425-94e0-324da196c4cb"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="4" y="6" width="104" height="24" uuid="fdbeb896-21a2-4343-b010-13ee0742632e"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<pen lineWidth="1.25" lineColor="#FF3399"/>
+					<topPen lineWidth="1.25" lineColor="#FF3399"/>
+					<leftPen lineWidth="1.25" lineColor="#FF3399"/>
+					<bottomPen lineWidth="1.25" lineColor="#FF3399"/>
+					<rightPen lineWidth="1.25" lineColor="#FF3399"/>
+				</box>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[ISSUED BY:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="138" y="6" width="153" height="20" uuid="38968e66-f72f-4187-bff8-756a14d86ea6"/>
+				<textFieldExpression><![CDATA[$P{ENTER NAME}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

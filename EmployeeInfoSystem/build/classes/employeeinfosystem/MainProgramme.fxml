@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="employeeinfosystem.MainProgrammeController">
+   <children>
+      <ImageView fitHeight="81.0" fitWidth="227.0" layoutX="32.0" layoutY="22.0" pickOnBounds="true">
+         <image>
+            <Image url="/image/g2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="273.0" layoutY="45.0" prefHeight="17.0" prefWidth="460.0" text="EMPLOYEE MANAGEMENT SYSTEM   ">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="8.0" layoutY="119.0" prefHeight="3.0" prefWidth="741.0" AnchorPane.rightAnchor="37.0" />
+      <Separator layoutX="20.0" layoutY="4.0" orientation="VERTICAL" prefHeight="115.0" prefWidth="8.0" style="-fx-background-color: FFF;" />
+      <Separator layoutX="759.0" layoutY="3.0" orientation="VERTICAL" prefHeight="115.0" prefWidth="8.0" style="-fx-background-color: FFF;" />
+      <Button fx:id="bt1" layoutX="116.0" layoutY="145.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="75.0" prefWidth="184.0" text="ADD EMPLOYEE" AnchorPane.leftAnchor="116.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="68.0" fitWidth="38.0" layoutX="127.0" layoutY="149.0" pickOnBounds="true" AnchorPane.leftAnchor="127.0">
+         <image>
+            <Image url="/image/G (2).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="bt2" layoutX="73.0" layoutY="231.0" mnemonicParsing="false" onAction="#DepartmentLog" prefHeight="75.0" prefWidth="212.0" text="DEPARTMENT LOGS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn3" layoutX="116.0" layoutY="318.0" mnemonicParsing="false" onAction="#Logout" prefHeight="75.0" prefWidth="184.0" text="LOGOUT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt4" layoutX="520.0" layoutY="145.0" mnemonicParsing="false" onAction="#serachEmployee" prefHeight="75.0" prefWidth="194.0" text="SEARCH EMPLOYEE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn5" layoutX="560.0" layoutY="231.0" mnemonicParsing="false" onAction="#eDITEMployee" prefHeight="75.0" prefWidth="184.0" text="EDIT EMPLOYEE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn6" layoutX="520.0" layoutY="318.0" mnemonicParsing="false" onAction="#AboutCompany" prefHeight="75.0" prefWidth="184.0" text="ABOUT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="57.0" fitWidth="38.0" layoutX="127.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/G (6).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="38.0" layoutX="526.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/G (5).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="38.0" layoutX="564.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/G (4).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="38.0" layoutX="526.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/G (1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="38.0" layoutX="83.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/G (3).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

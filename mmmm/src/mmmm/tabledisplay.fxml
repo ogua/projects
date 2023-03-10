@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="a1" prefWidth="75.0" text="CARDID" />
+            <TableColumn fx:id="a2" prefWidth="75.0" text="FIRSTNAME" />
+            <TableColumn fx:id="a3" prefWidth="75.0" text="OTHERNAMES" />
+            <TableColumn fx:id="a4" prefWidth="75.0" text="MONTH" />
+            <TableColumn fx:id="a5" prefWidth="75.0" text="AMOUNT" />
+            <TableColumn fx:id="a6" prefWidth="75.0" text="YEAR" />
+            <TableColumn fx:id="a7" prefWidth="75.0" text="DATE" />
+         </columns>
+      </TableView>
+   </children>
+</StackPane>

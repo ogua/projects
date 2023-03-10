@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="951.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ncwcdatabase.MembersTableController">
+   <children>
+      <HBox>
+         <children>
+            <Label prefHeight="34.0" prefWidth="213.0" text="MEMBERS TABLE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/image/12.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <TextField fx:id="saerchFiltersd" prefHeight="25.0" prefWidth="300.0" promptText="SEARCH MEMBER HERE">
+               <HBox.margin>
+                  <Insets top="14.0" />
+               </HBox.margin>
+            </TextField>
+            <Region prefHeight="43.0" prefWidth="271.0" />
+            <Button fx:id="printRrp" mnemonicParsing="false" onAction="#PrintTable" prefHeight="25.0" prefWidth="96.0" text="PRINT REPORT">
+               <HBox.margin>
+                  <Insets top="14.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets top="8.0" />
+         </VBox.margin>
+      </Separator>
+      <ScrollPane prefViewportHeight="352.0" prefViewportWidth="951.0">
+         <content>
+            <TableView fx:id="table" prefHeight="348.0" prefWidth="2350.0">
+               <columns>
+                  <TableColumn fx:id="A1" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="A2" prefWidth="75.0" text="FIRSTNAME" />
+                  <TableColumn fx:id="A3" prefWidth="75.0" text="OTHERNAME" />
+                  <TableColumn fx:id="A4" prefWidth="75.0" text="RESIDENT" />
+                  <TableColumn fx:id="A5" prefWidth="49.0" text="AGE" />
+                  <TableColumn fx:id="A6" prefWidth="68.0" text="M_STATUS" />
+                  <TableColumn fx:id="A7" prefWidth="96.0" text="OCCUPATION" />
+                  <TableColumn fx:id="A8" prefWidth="87.0" text="NAME OF SPOUSE" />
+                  <TableColumn fx:id="A9" prefWidth="75.0" text="NO OF CHLD." />
+                  <TableColumn fx:id="A10" prefWidth="94.0" text="NATIONALITY" />
+                  <TableColumn fx:id="A11" prefWidth="86.0" text="HOMETOWN" />
+                  <TableColumn fx:id="A12" prefWidth="116.0" text="DATE OF BSPTISM" />
+                  <TableColumn fx:id="A13" prefWidth="294.0" text="ADDRESS" />
+                  <TableColumn fx:id="A14" prefWidth="99.0" text="TELEPHONE NO" />
+                  <TableColumn fx:id="A15" prefWidth="189.0" text="HOUSE NO." />
+                  <TableColumn fx:id="A16" prefWidth="250.0" text="NAME OF FORMER CHURCH" />
+                  <TableColumn fx:id="A17" prefWidth="152.0" text="POSITION IN CHURCH" />
+                  <TableColumn fx:id="A18" prefWidth="79.0" text="CARDID" />
+                  <TableColumn fx:id="A19" prefWidth="82.0" text="TITHEID" />
+                  <TableColumn fx:id="A20" prefWidth="83.0" text="IMAGE" />
+                  <TableColumn fx:id="A21" prefWidth="152.0" text="DATE &amp; TIME" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

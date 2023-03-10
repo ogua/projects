@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tmp" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="user_ID" class="java.lang.String"/>
+	<parameter name="start_Date" class="java.sql.Timestamp"/>
+	<parameter name="end_Date" class="java.sql.Timestamp"/>
+	<queryString>
+		<![CDATA[SELECT u.User_Login, u.User_Type, u.First_Name, u.Last_Name, u.Email, u.Company
+  FROM Users u
+where u.User_ID = $P{user_ID}]]>
+	</queryString>
+	<field name="User_Login" class="java.lang.String"/>
+	<field name="User_Type" class="java.lang.String"/>
+	<field name="First_Name" class="java.lang.String"/>
+	<field name="Last_Name" class="java.lang.String"/>
+	<field name="Email" class="java.lang.String"/>
+	<field name="Company" class="java.lang.String"/>
+	<title>
+		<band height="50">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="50"/>
+				<textElement textAlignment="Center">
+					<font size="34" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TEST]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="222" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="173" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="173" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="173" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="173" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Last Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="173" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="173" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Company]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="0" width="382" height="20" forecolor="#0066CC"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{User_Login}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="20" width="382" height="20" forecolor="#0066CC"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{User_Type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="40" width="382" height="20" forecolor="#0066CC"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{First_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="60" width="382" height="20" forecolor="#0066CC"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Last_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="80" width="382" height="20" forecolor="#0066CC"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="100" width="382" height="20" forecolor="#0066CC"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Company}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="125" width="555" height="20" forecolor="#FFFF00" backcolor="#3333FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Uploaded Files]]></text>
+			</staticText>
+			<subreport isUsingCache="true" runToBottom="true">
+				<reportElement x="0" y="145" width="555" height="77"/>
+				<subreportParameter name="start_Date">
+					<subreportParameterExpression><![CDATA[$P{start_Date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="end_Date">
+					<subreportParameterExpression><![CDATA[$P{end_Date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA["tmp_upload.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="102">
+			<subreport runToBottom="true">
+				<reportElement x="0" y="20" width="555" height="82"/>
+				<subreportParameter name="user_ID">
+					<subreportParameterExpression><![CDATA[$P{user_ID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA["tmp_audit.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="20" forecolor="#FFFF00" backcolor="#3333FF"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Action details]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

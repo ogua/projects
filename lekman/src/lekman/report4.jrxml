@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b52310ac-003b-43ed-8a32-24edb7dc2f85">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="NAME OF TELLER" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     users.`ID` AS users_ID,
+     users.`username` AS users_username,
+     users.`password` AS users_password
+FROM
+     `users` users]]>
+	</queryString>
+	<field name="users_ID" class="java.lang.Integer"/>
+	<field name="users_username" class="java.lang.String"/>
+	<field name="users_password" class="java.lang.String"/>
+	<group name="users_ID">
+		<groupExpression><![CDATA[$F{users_ID}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="38" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="13" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="10" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="20" uuid="c68b9180-6847-44ce-b476-c7f7bb63da9b"/>
+				<textFieldExpression><![CDATA[$F{users_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="20" uuid="91745a04-c74a-4642-aff4-4ad4e02f9d6e"/>
+				<textFieldExpression><![CDATA[$F{users_username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="20" uuid="53dea6d2-a6bc-4ad6-a80c-34b0263e13ec"/>
+				<textFieldExpression><![CDATA[$F{users_password}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="8" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="7" width="66" height="20" uuid="fc62290d-6ee7-4d90-98c2-552dae3d9908"/>
+				<text><![CDATA[ISSUED BY:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="85" y="7" width="135" height="20" uuid="2e257e27-4834-4379-9238-1ecea5e7ed19"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NAME OF TELLER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

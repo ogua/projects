@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="932ca3e0-624a-4179-b719-6722d9ff1f10">
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#FFFFFF" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     welfare.`ID` AS welfare_ID,
+     welfare.`CARDID` AS welfare_CARDID,
+     welfare.`FIRSTNAME` AS welfare_FIRSTNAME,
+     welfare.`OTHERNAMES` AS welfare_OTHERNAMES,
+     welfare.`MON` AS welfare_MON,
+     welfare.`AMOUNT` AS welfare_AMOUNT,
+     welfare.`YEAR` AS welfare_YEAR,
+     welfare.`DATE` AS welfare_DATE
+FROM
+     `welfare` welfare]]>
+	</queryString>
+	<field name="welfare_ID" class="java.lang.Integer"/>
+	<field name="welfare_CARDID" class="java.lang.String"/>
+	<field name="welfare_FIRSTNAME" class="java.lang.String"/>
+	<field name="welfare_OTHERNAMES" class="java.lang.String"/>
+	<field name="welfare_MON" class="java.lang.String"/>
+	<field name="welfare_AMOUNT" class="java.lang.String"/>
+	<field name="welfare_YEAR" class="java.lang.String"/>
+	<field name="welfare_DATE" class="java.sql.Timestamp"/>
+	<group name="welfare_ID">
+		<groupExpression><![CDATA[$F{welfare_ID}]]></groupExpression>
+		<groupHeader>
+			<band height="40">
+				<textField>
+					<reportElement style="SubTitle" x="143" y="13" width="410" height="24" forecolor="#000000" uuid="68a5f18d-11aa-4921-97bc-0bcf31a48a0e"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{welfare_ID}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement mode="Opaque" x="97" y="13" width="36" height="24" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="7f2e33e1-0018-4758-9266-fd22fdb0815f"/>
+				</rectangle>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="30">
+				<frame>
+					<reportElement mode="Opaque" x="405" y="0" width="150" height="30" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="5e59e5cf-50e8-4a82-8905-b6925ca9b30a"/>
+				</frame>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band height="822" splitType="Stretch">
+			<image vAlign="Bottom">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="313" width="85" height="409" backcolor="#000000" uuid="f593d147-f60b-4f31-978d-9727890f74e9"/>
+				<imageExpression><![CDATA["silhouette.jpg"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement positionType="Float" x="-20" y="313" width="20" height="409" backcolor="#000000" uuid="563def7c-50e1-4a09-971a-c473e609e071"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="722" width="105" height="100" forecolor="#666666" backcolor="#666666" uuid="93b9b10a-cee1-4896-82aa-3fb8b0be4f28"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Column header" x="0" y="0" width="104" height="73" forecolor="#000000" uuid="50d7c737-6c9d-4623-a96b-87ec9d690b43"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="58" isBold="true" pdfFontName="Helvetica-Bold"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="0" y="77" width="104" height="20" forecolor="#000000" uuid="bec336b8-2a58-4da6-90bf-545b9daaf842"/>
+					<box leftPadding="4" rightPadding="4"/>
+					<textElement textAlignment="Center">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement mode="Transparent" x="42" y="73" width="20" height="1" uuid="e4e0de8a-1b1c-41b1-94b6-a3b8d5cee57e"/>
+				</line>
+			</frame>
+		</band>
+	</background>
+	<title>
+		<band height="152" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="0" y="0" width="555" height="115" uuid="d41d23b4-4177-49e1-96ec-959356e80bd4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="54" isBold="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[SILHOUETTE TITLE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="234" y="115" width="321" height="37" uuid="d14bd721-b95e-4351-8f2c-d2c086d57a49"/>
+				<textElement textAlignment="Right">
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[Silhouette SubTitle]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="97" y="5" width="458" height="20" backcolor="#666666" uuid="7a2eb269-8aed-4fc2-ac63-ae4e6a6b8886"/>
+				<staticText>
+					<reportElement style="Column header" x="0" y="0" width="65" height="15" uuid="3c71bcb3-496d-452c-81f7-a37de88ed8d4"/>
+					<text><![CDATA[welfare_CARDID]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="65" y="0" width="65" height="15" uuid="dc699f6a-b40f-468d-9188-0c9c3bb2a251"/>
+					<text><![CDATA[welfare_FIRSTNAME]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="130" y="0" width="65" height="15" uuid="c3e4b5e5-7001-4f24-9626-5e34f6111f06"/>
+					<text><![CDATA[welfare_OTHERNAMES]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="195" y="0" width="65" height="15" uuid="43f8eccc-bd25-40d3-98dd-1ad067401c4f"/>
+					<text><![CDATA[welfare_MON]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="260" y="0" width="65" height="15" uuid="f1782c21-101f-4df5-aed2-bc22584b0814"/>
+					<text><![CDATA[welfare_AMOUNT]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="325" y="0" width="65" height="15" uuid="7caba4fd-65c5-43a9-ae1a-d26e7cfac20e"/>
+					<text><![CDATA[welfare_YEAR]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="390" y="0" width="65" height="15" uuid="c33c6775-146a-4d9c-90ce-5bebd1ec9a46"/>
+					<text><![CDATA[welfare_DATE]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<frame>
+				<reportElement x="97" y="1" width="458" height="15" uuid="f6d1bc5b-1202-44f5-848c-0e7b23a18884"/>
+				<textField>
+					<reportElement style="Detail" x="0" y="0" width="65" height="15" uuid="b7808abf-da23-4e01-96af-01d456f087ec"/>
+					<textFieldExpression><![CDATA[$F{welfare_CARDID}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="65" y="0" width="65" height="15" uuid="1be6027c-845c-4056-912c-4d12fb50ed63"/>
+					<textFieldExpression><![CDATA[$F{welfare_FIRSTNAME}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="130" y="0" width="65" height="15" uuid="a191ad4e-6242-48d1-955c-cbff40e81e22"/>
+					<textFieldExpression><![CDATA[$F{welfare_OTHERNAMES}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="195" y="0" width="65" height="15" uuid="7f3b93b5-a780-41e6-819c-aab717bbea4b"/>
+					<textFieldExpression><![CDATA[$F{welfare_MON}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="260" y="0" width="65" height="15" uuid="a1385497-9959-45d2-80c3-f4cd6b047c06"/>
+					<textFieldExpression><![CDATA[$F{welfare_AMOUNT}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="325" y="0" width="65" height="15" uuid="5c621817-4a19-4dd8-b7d0-e341968e51fd"/>
+					<textFieldExpression><![CDATA[$F{welfare_YEAR}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="390" y="0" width="65" height="15" uuid="7a961a4b-1cb5-4b05-8e3a-5b6c5cde4589"/>
+					<textFieldExpression><![CDATA[$F{welfare_DATE}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="97" y="16" width="458" height="1" uuid="539ef635-0443-4acf-a473-0284ab807f0c"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="100" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="424" y="0" width="131" height="20" forecolor="#000000" uuid="0b96e3e8-91c9-4d56-bb8b-523142a5f4e2"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Column header" x="96" y="0" width="267" height="20" forecolor="#000000" uuid="de155752-c808-4579-9b5d-e38ea97a798d"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Silhouette Title Report]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

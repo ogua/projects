@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0e45f399-1d37-49ed-9cd9-2715817bff3a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     formreg.`ID` AS formreg_ID,
+     formreg.`Firstname` AS formreg_Firstname,
+     formreg.`Othernames` AS formreg_Othernames,
+     formreg.`Resident` AS formreg_Resident,
+     formreg.`Age` AS formreg_Age,
+     formreg.`M_Status` AS formreg_M_Status,
+     formreg.`Occupation` AS formreg_Occupation,
+     formreg.`nameofspouse` AS formreg_nameofspouse,
+     formreg.`noofchildren` AS formreg_noofchildren,
+     formreg.`nationality` AS formreg_nationality,
+     formreg.`hometown` AS formreg_hometown,
+     formreg.`dateofbaptism` AS formreg_dateofbaptism,
+     formreg.`address` AS formreg_address,
+     formreg.`Telno` AS formreg_Telno,
+     formreg.`Houseno` AS formreg_Houseno,
+     formreg.`nameoffchrch` AS formreg_nameoffchrch,
+     formreg.`posinchrch` AS formreg_posinchrch,
+     formreg.`Cardid` AS formreg_Cardid,
+     formreg.`TitheId` AS formreg_TitheId,
+     formreg.`Image` AS formreg_Image,
+     formreg.`Date` AS formreg_Date
+FROM
+     `formreg` formreg
+WHERE ID = 1]]>
+	</queryString>
+	<field name="formreg_ID" class="java.lang.Integer"/>
+	<field name="formreg_Firstname" class="java.lang.String"/>
+	<field name="formreg_Othernames" class="java.lang.String"/>
+	<field name="formreg_Resident" class="java.lang.String"/>
+	<field name="formreg_Age" class="java.lang.String"/>
+	<field name="formreg_M_Status" class="java.lang.String"/>
+	<field name="formreg_Occupation" class="java.lang.String"/>
+	<field name="formreg_nameofspouse" class="java.lang.String"/>
+	<field name="formreg_noofchildren" class="java.lang.String"/>
+	<field name="formreg_nationality" class="java.lang.String"/>
+	<field name="formreg_hometown" class="java.lang.String"/>
+	<field name="formreg_dateofbaptism" class="java.lang.String"/>
+	<field name="formreg_address" class="java.lang.String"/>
+	<field name="formreg_Telno" class="java.lang.String"/>
+	<field name="formreg_Houseno" class="java.lang.String"/>
+	<field name="formreg_nameoffchrch" class="java.lang.String"/>
+	<field name="formreg_posinchrch" class="java.lang.String"/>
+	<field name="formreg_Cardid" class="java.lang.String"/>
+	<field name="formreg_TitheId" class="java.lang.String"/>
+	<field name="formreg_Image" class="java.io.InputStream"/>
+	<field name="formreg_Date" class="java.sql.Timestamp"/>
+	<group name="formreg_ID">
+		<groupExpression><![CDATA[$F{formreg_ID}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="10" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="238" y="0" width="102" height="20" uuid="96266d22-9283-43a1-949a-8ee572a7e974"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[IMAGE TEST]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<image>
+				<reportElement x="238" y="12" width="132" height="91" uuid="0217ab13-4b8e-4541-a1ea-5cb543970923"/>
+				<imageExpression><![CDATA[$F{formreg_Image}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="2" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="6" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="6" splitType="Stretch"/>
+	</summary>
+</jasperReport>

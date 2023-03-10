@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainPane" style="-fx-background-color: abd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StockSystems.ProductInfoController">
+   <children>
+      <HBox>
+         <children>
+            <MenuBar prefHeight="33.0" prefWidth="760.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="BILL">
+                     <items>
+                        <MenuItem fx:id="billMenu" mnemonicParsing="false" onAction="#BillMenu" text="BILL" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Label fx:id="Time" prefHeight="30.0" prefWidth="48.0" style="-fx-background-color: white;" />
+            <Label fx:id="date" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: fff;" />
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#LogoutMenu" prefHeight="31.0" prefWidth="101.0" text="LOGOUT" />
+         </children>
+      </HBox>
+      <AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="887.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="291.0" text="PRODUCT INFORMATION">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="173.0" layoutY="126.0" prefHeight="271.0" prefWidth="561.0">
+              <columns>
+                <TableColumn fx:id="pid" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="pname" prefWidth="76.0" text="NAME" />
+                  <TableColumn fx:id="pwty" prefWidth="96.0" text="QTY" />
+                  <TableColumn fx:id="pamount" prefWidth="74.0" text="AMOUNT" />
+                  <TableColumn fx:id="pdesc" prefWidth="239.0" text="DESCRIPTION" />
+              </columns>
+            </TableView>
+            <TextField fx:id="filtersearch" alignment="CENTER" layoutX="293.0" layoutY="89.0" prefHeight="30.0" prefWidth="308.0" promptText="SEARCH PRODUCT EITHER BY ID OR NAME">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainpane" prefHeight="687.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ncwcdatabase.ViewParticularMemberController">
+   <children>
+      <ScrollPane prefHeight="690.0" prefWidth="800.0">
+         <content>
+            <VBox fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="800.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="800.0">
+                     <children>
+                        <ImageView fitHeight="97.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="/image/12.jpg" />
+                           </image>
+                        </ImageView>
+                        <Separator orientation="VERTICAL" prefHeight="136.0" prefWidth="15.0" />
+                        <Label prefHeight="76.0" prefWidth="525.0" text="NEW COVENANT MEMBERSHIP REGISTRATION FORM">
+                           <font>
+                              <Font name="Bauhaus 93" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="136.0" prefWidth="19.0" />
+                        <ImageView fx:id="imageview" fitHeight="116.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Separator />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="7.0" prefWidth="800.0">
+                     <children>
+                        <Separator />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Separator orientation="VERTICAL" />
+                        <TextField fx:id="identer" onAction="#HANDLESELECT" prefHeight="40.0" prefWidth="555.0" promptText="Enter Membership  CARD ID OR TITHE ID" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="80.0" right="30.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Separator orientation="VERTICAL" prefHeight="40.0" prefWidth="26.0" />
+                        <Separator orientation="VERTICAL" />
+                     </children>
+                  </HBox>
+                  <Separator prefHeight="10.0" prefWidth="800.0" VBox.vgrow="ALWAYS" />
+                  <GridPane fx:id="ADD" hgap="10.0" vgap="10.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="4.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="200.0" text="FIRSTNAME" />
+                        <Label prefHeight="30.0" prefWidth="197.0" text="OCUPATION" GridPane.rowIndex="1" />
+                        <Label prefHeight="30.0" prefWidth="200.0" text="MARITAL STATUS" GridPane.rowIndex="2" />
+                        <TextField fx:id="a1" promptText="FIRSTNAME" GridPane.columnIndex="1" />
+                        <TextField fx:id="a3" promptText="OCCUPATION" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label prefHeight="30.0" prefWidth="200.0" text="AGE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label prefHeight="30.0" prefWidth="200.0" text="RESIDENCE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="a4" promptText="AGE" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <TextField fx:id="a5" promptText="RESIDENCE" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Label prefHeight="30.0" prefWidth="180.0" text="OTHERNAMES" GridPane.columnIndex="2" />
+                        <TextField fx:id="a2" promptText="OTHERNAMES" GridPane.columnIndex="3" />
+                        <TextField fx:id="a7" promptText="NAME OF SPOUSE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label prefHeight="30.0" prefWidth="182.0" text="NO OF CHILDREN" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label prefHeight="28.0" prefWidth="183.0" text="NAME OF SPOUSE" GridPane.rowIndex="3" />
+                        <Label prefHeight="30.0" prefWidth="183.0" text="NATIONALITY" GridPane.rowIndex="4" />
+                        <Label prefHeight="30.0" prefWidth="182.0" text="HOMETOWN" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Label prefHeight="30.0" prefWidth="182.0" text="DATE OF BAPTISM" GridPane.rowIndex="5" />
+                        <Label prefHeight="30.0" prefWidth="183.0" text="ADDRESS" GridPane.rowIndex="6" />
+                        <TextField fx:id="a9" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="a11" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+                        <TextField fx:id="a12" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="6" />
+                        <TextField fx:id="a10" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <TextField fx:id="a13" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <TextField fx:id="a15" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+                        <TextField fx:id="a16" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <TextField fx:id="a14" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                        <Label prefHeight="29.0" prefWidth="182.0" text="H/NO" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <Label prefHeight="28.0" prefWidth="183.0" text="TEL. NO" GridPane.rowIndex="7" />
+                        <Label prefHeight="27.0" prefWidth="183.0" text="FORMER CHURCH NAME" GridPane.rowIndex="8" />
+                        <Label prefHeight="30.0" prefWidth="183.0" text="POSITION IN CHURCH" GridPane.rowIndex="9" />
+                        <TextField fx:id="a6" promptText="MARITAL STATUS" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="a8" promptText="NO OF CHILDREN" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label prefHeight="30.0" prefWidth="182.0" text="CARD NUMBER" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <Label prefHeight="17.0" prefWidth="183.0" text="WELFARE NUMBER" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                        <TextField fx:id="a18" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                        <TextField fx:id="a19" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                        <Label prefHeight="25.0" prefWidth="183.0" text="DATE &amp; TIME REGISTERED" GridPane.rowIndex="10" />
+                        <TextField fx:id="a21" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Button fx:id="ReporTPrint" mnemonicParsing="false" onAction="#PrintReports" prefHeight="31.0" prefWidth="182.0" text="PRINT" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/image/print.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

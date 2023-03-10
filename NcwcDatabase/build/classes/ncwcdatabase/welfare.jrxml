@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e53e5588-9141-4989-bef2-fcd7e62d80fb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT welfare.ID, welfare.CARDID, welfare.FIRSTNAME, welfare.OTHERNAMES, welfare.MON, welfare.AMOUNT, welfare.YEAR, welfare.DATE, formreg.Image FROM formreg RIGHT JOIN welfare ON welfare.CARDID = formreg.Cardid]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CARDID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="FIRSTNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="OTHERNAMES" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MON" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AMOUNT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="YEAR" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATE" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Image" class="java.io.InputStream">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-40" y="-20" width="595" height="92" backcolor="#006699" uuid="97587062-9eba-4cbf-a219-127e2fd3764b"/>
+				<staticText>
+					<reportElement x="173" y="20" width="266" height="43" forecolor="#FFFFFF" uuid="8a312a83-abbc-4656-b745-b05303f3ce4d"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[WELFARE INFO]]></text>
+				</staticText>
+				<image>
+					<reportElement x="466" y="0" width="100" height="79" uuid="4d689f37-f533-4af3-9e6d-0eef3aa4bed1"/>
+					<imageExpression><![CDATA[$F{Image}]]></imageExpression>
+				</image>
+				<image>
+					<reportElement x="40" y="0" width="206" height="79" uuid="4ea23a2b-86fc-44a5-84c3-2c426e38eae9"/>
+					<imageExpression><![CDATA["C:\\Users\\ogua\\Documents\\NetBeansProjects\\NcwcDatabase\\src\\image\\12.jpg"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="8012cdb0-5274-4357-92ce-a71141da18d0"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="1" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="d0f7c6ac-82b4-4565-95bf-6f984bf542ff"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CARDID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="74" y="0" width="88" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="21a62e19-84fb-4f77-9df1-bca3f3012b90"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FIRSTNAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="173" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="38b7a90d-fd9d-4e33-8b30-84c12c545689"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OTHERS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="244" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="a6708d83-6404-4aa4-94dc-bcd44a3c3775"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MONTH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="314" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="9b3f2a1d-7dcb-42d1-ae16-8e1e8cfa991c"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AMOUNT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="386" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="81bf292f-0447-4bd3-b9c1-bd72a126d419"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[YEAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="465" y="0" width="61" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="ba14c4f4-a727-416d-bf35-875b153b4240"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="41b1cc0d-870b-4e88-b863-d9ccf6e6bc4c"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="85" y="0" width="71" height="20" uuid="2d25040b-8fe6-456c-855a-7f732aba252e"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FIRSTNAME}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="244" y="0" width="61" height="20" uuid="2c66afe2-e4dc-49e6-a20f-200b01e32b98"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MON}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="314" y="0" width="61" height="20" uuid="1d5814fc-ad43-4fb7-bda3-75d8b039ab45"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AMOUNT}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="465" y="0" width="61" height="20" uuid="c287f702-7d7a-4392-926d-2a93dcc52e22"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATE}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="74" height="19" uuid="2a52ff08-070a-4b5f-866c-72b6c1aa9144"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CARDID}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="386" y="0" width="61" height="20" uuid="9e63bd0a-d08a-474e-8302-56010e0aa6d9"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{YEAR}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="173" y="4" width="61" height="20" uuid="e8dbfe01-0454-471b-9662-f289e20c4008"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{OTHERNAMES}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="d05a1153-d4d6-440e-90ac-9fefbd7f91ed"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="1dadc070-6702-48b0-b95b-f6e85f3e3505"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="2d2184cf-2adc-44d8-92df-2dcab245fced"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

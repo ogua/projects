@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="216.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.HotelMealController">
+   <children>
+      <TabPane layoutX="6.0" layoutY="7.0" prefHeight="200.0" prefWidth="358.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Meal 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="28.0" prefHeight="33.0" prefWidth="114.0" text="Current Price">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font></Label>
+                        <Label layoutX="14.0" layoutY="69.0" prefHeight="26.0" prefWidth="106.0" text="Update To">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font></Label>
+                        <TextField fx:id="MC1" disable="true" layoutX="143.0" layoutY="32.0" prefHeight="25.0" prefWidth="194.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></TextField>
+                        <TextField fx:id="MU1" layoutX="143.0" layoutY="73.0" prefHeight="25.0" prefWidth="192.0" promptText="UPDATE PRICE TO">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></TextField>
+                        <Button fx:id="update1" layoutX="143.0" layoutY="118.0" mnemonicParsing="false" onAction="#Update1" prefHeight="25.0" prefWidth="79.0" text="Update" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Meal 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="MU2" layoutX="134.0" layoutY="74.0" prefHeight="25.0" prefWidth="196.0" promptText="UPDATE PRICE TO">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></TextField>
+                        <TextField fx:id="MC2" disable="true" layoutX="134.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></TextField>
+                        <Label layoutX="14.0" layoutY="73.0" prefHeight="26.0" prefWidth="106.0" text="Update To">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="31.0" prefHeight="33.0" prefWidth="114.0" text="Current Price">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="update2" layoutX="134.0" layoutY="121.0" mnemonicParsing="false" onAction="#Update2" prefHeight="25.0" prefWidth="79.0" text="Update" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Meal 3">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="MU3" layoutX="134.0" layoutY="61.0" prefHeight="25.0" prefWidth="214.0" promptText="UPDATE PRICE TO">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></TextField>
+                        <TextField fx:id="MC3" disable="true" layoutX="134.0" layoutY="26.0" prefHeight="25.0" prefWidth="212.0">
+                          </TextField>
+                        <Label layoutX="14.0" layoutY="60.0" prefHeight="26.0" prefWidth="106.0" text="Update To">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font></Label>
+                        <Label layoutX="14.0" layoutY="22.0" prefHeight="33.0" prefWidth="114.0" text="Current Price">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font></Label>
+                        <Button fx:id="update3" layoutX="134.0" layoutY="109.0" mnemonicParsing="false" onAction="#Update3" prefHeight="25.0" prefWidth="79.0" text="Update" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="636.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeeinfosystem.DepartmntLogController">
+   <children>
+      <ImageView fitHeight="98.0" fitWidth="227.0" layoutX="22.0" layoutY="21.0" pickOnBounds="true">
+         <image>
+            <Image url="/image/g2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="260.0" layoutY="59.0" text="DEPARTMENT / EMPLOYEES LOG">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="6.0" layoutY="135.0" prefHeight="5.0" prefWidth="790.0" />
+      <ListView fx:id="List" layoutX="208.0" layoutY="156.0" prefHeight="435.0" prefWidth="278.0" />
+      <Label layoutX="217.0" layoutY="162.0" prefHeight="30.0" prefWidth="197.0" text="ACCOUNTING DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="200.0" text="HUMAN RESOURCE DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="233.0" text=" INFORMATION TECHNOLOGY DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="264.0" prefHeight="17.0" prefWidth="249.0" text="PROCUREMENT MANAGEMENT DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="300.0" text=" PUBLIC HEALTH DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="330.0" text="TOURISM DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="365.0" text="ENGINEERING DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="400.0" text="TRANSPORTATION DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="438.0" text="TREASURY DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="472.0" text="BUDJET DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="509.0" text="LEGAL DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="541.0" text="LAW ENFORCEMENT DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="569.0" text="PUBLIC RELATIONS DEPARTMENT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="587.0" layoutY="146.0" text="no of employee">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="489.0" layoutY="155.0" prefHeight="5.0" prefWidth="101.0" />
+      <Separator layoutX="486.0" layoutY="158.0" orientation="VERTICAL" prefHeight="435.0" prefWidth="2.0" style="-fx-background-color: fff;" />
+      <Separator layoutX="698.0" layoutY="154.0" prefHeight="5.0" prefWidth="80.0" />
+      <Separator layoutX="765.0" layoutY="153.0" orientation="VERTICAL" prefHeight="435.0" prefWidth="0.0" style="-fx-background-color: fff;" />
+      <Separator layoutX="482.0" layoutY="587.0" prefHeight="5.0" prefWidth="288.0" />
+      <TextField fx:id="d1" layoutX="492.0" layoutY="165.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d2" layoutX="492.0" layoutY="196.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d3" layoutX="492.0" layoutY="229.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d4" layoutX="492.0" layoutY="260.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d5" layoutX="492.0" layoutY="296.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d6" layoutX="492.0" layoutY="326.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d7" layoutX="492.0" layoutY="358.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d8" layoutX="492.0" layoutY="396.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d9" layoutX="492.0" layoutY="434.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d10" layoutX="492.0" layoutY="468.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d11" layoutX="492.0" layoutY="505.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d12" layoutX="492.0" layoutY="537.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d13" layoutX="492.0" layoutY="565.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="d14" layoutX="493.0" layoutY="597.0" prefHeight="25.0" prefWidth="271.0" promptText="DEPARTMENT NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="373.0" layoutY="601.0" text="TOTAL EMPLOYEE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="BACK" layoutX="22.0" layoutY="147.0" mnemonicParsing="false" onAction="#GOBACK" prefHeight="25.0" prefWidth="80.0" text="BACK" />
+      <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="28.0" layoutY="153.0" pickOnBounds="true">
+         <image>
+            <Image url="/image/G1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

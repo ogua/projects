@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employeeinfosystem.SearchEmployeeController">
+   <children>
+      <ImageView fitHeight="86.0" fitWidth="219.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="/image/g2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="247.0" layoutY="49.0" text="SEARCH EMPLOYEE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchId" layoutX="400.0" layoutY="49.0" onAction="#SearchID" prefHeight="30.0" prefWidth="400.0" promptText="SEARCH EMPLOYEE EITHER BY ID FIRSTNAME OR LASTNAME">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="table" layoutX="11.0" layoutY="135.0" prefHeight="353.0" prefWidth="795.0">
+        <columns>
+            <TableColumn fx:id="E1" prefWidth="90.0" text="EMPLOYEE ID" />
+          <TableColumn fx:id="E2" prefWidth="75.0" text="FIRSTNAME" />
+          <TableColumn fx:id="E3" prefWidth="75.0" text="LASTNAME" />
+            <TableColumn fx:id="E4" prefWidth="95.0" text="OTHERNAMES" />
+            <TableColumn fx:id="E5" prefWidth="95.0" text="SSS NO" />
+            <TableColumn fx:id="E6" prefWidth="95.0" text="POSITION" />
+            <TableColumn fx:id="E7" prefWidth="95.0" text="DEPARTMENT" />
+            <TableColumn fx:id="E8" prefWidth="95.0" text="GRADE" />
+            <TableColumn fx:id="E9" prefWidth="95.0" text="SALARY" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="25.0" layoutY="110.0" mnemonicParsing="false" onAction="#gabak" prefHeight="25.0" prefWidth="75.0" text="BACK" />
+      <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="32.0" layoutY="116.0" pickOnBounds="true">
+         <image>
+            <Image url="/image/G1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

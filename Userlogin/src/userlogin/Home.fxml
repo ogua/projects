@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userlogin.FXMLDocumentController">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="newMem" mnemonicParsing="false" onAction="#AddnewMember" text="Add New Member ..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Add Tithe ....." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Add Welfare........" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#ExitWindow" text="Exit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Edit Member Info" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="View">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="View All Tithe Details ..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="View All Tithe Details ..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="View All Tithe Details ..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Info">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Info About the Pastors ..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Info About the Ushers ..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Info About the Instrumentalist ..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Info About the Deacons  ..." />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Search Member ....." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Search Tithe ....." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Search Welfare ....." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox prefHeight="125.0" prefWidth="780.0">
+               <children>
+                  <ImageView fitHeight="135.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="image/12.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="151.0" prefWidth="557.0" text="      WELCOME TO NEW COVENANT WORSHIP CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <Region prefHeight="135.0" prefWidth="1.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="logout" mnemonicParsing="false" onAction="#UserLogout" prefHeight="25.0" prefWidth="109.0" text="LOGOUT">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" top="60.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <padding>
+      <Insets right="20.0" />
+   </padding>
+   <left>
+      <TreeView prefHeight="486.0" prefWidth="199.0" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <Label prefHeight="51.0" prefWidth="780.0" text="                                                                    Copyright (c) 2017         Powered by Ogua Solution Center" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </bottom>
+</BorderPane>
