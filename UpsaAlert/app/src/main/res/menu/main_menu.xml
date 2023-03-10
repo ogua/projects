@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/profile" android:title="Profile" android:icon="@drawable/login" />
+    <item android:id="@+id/history" android:title="History" android:icon="@drawable/login" />
+    <item android:id="@+id/events" android:title="Upcoming Events" android:icon="@drawable/events" />
+    <item android:id="@+id/mainpro" android:title="Previous Events" android:icon="@drawable/events" />
+    <item android:id="@+id/logout" android:title="Logout" app:showAsAction="ifRoom"/>
+</menu>

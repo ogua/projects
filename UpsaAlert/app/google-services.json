@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "392618114428",
+    "firebase_url": "https://upsaalert-54ecd.firebaseio.com",
+    "project_id": "upsaalert-54ecd",
+    "storage_bucket": "upsaalert-54ecd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392618114428:android:2217661b6561c1c4",
+        "android_client_info": {
+          "package_name": "com.example.upsaalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "392618114428-uo3i8lo295rihb5mdod7elo14cngfif9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.upsaalert",
+            "certificate_hash": "d1d8aabeda4e8c25887a3c9c6e425cf825654851"
+          }
+        },
+        {
+          "client_id": "392618114428-q6vve1qaoubsjh1gj7ph9q64sj5c30hh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHkdKkwTP8l7FA82vl14g3-SBDvNT9s44"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "392618114428-q6vve1qaoubsjh1gj7ph9q64sj5c30hh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
