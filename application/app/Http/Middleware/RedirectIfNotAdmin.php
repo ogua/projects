@@ -23,7 +23,8 @@ class RedirectIfNotAdmin
             ]);
         }elseif (Auth::guard($guard)->check()){
             if (app_config('purchase_key')==''){
-                return redirect('verify-purchase-code');
+                # return redirect('verify-purchase-code');
+                return $next($request);
             }
         }
         return $next($request);
