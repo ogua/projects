@@ -1,0 +1,55 @@
+<div class="banner">
+		<ul id="bslide" class="bslide1">
+			<li class="slideimg"><img src="images/baner.jpg" class="img-responsive"></li>
+			<li class="slideimg"><img src="images/baner2.jpg" class="img-responsive"></li>
+			<li class="slideimg"><img src="images/baner3.jpg" class="img-responsive"></li>
+            <li class="slideimg"><img src="images/baner4.jpg" class="img-responsive"></li>
+		</ul>
+		<div class="slidebtn1">
+			<button id="slidebtn1" onclick="slideclick(1)" class="btnclick btn btn-default">&laquo;</button>
+		</div>
+		<div class="slidebtn2">
+			<button id="slidebtn2" onclick="slideclick(-1)" class="btnclick btn btn-default">&raquo;</button>
+		</div>
+		<script type="text/javascript">
+			var index = 1;
+			function slideclick(n){
+				index = index + n;
+			    slideImage(index);
+			}
+			slideImage(index);
+			function slideImage(n){
+				var imgslide = $(".slideimg");
+				var cumtimg = imgslide.length;
+				if(n > cumtimg){
+					index = 1;
+				}if(n < 1){
+					index = cumtimg;
+				}
+				for(var i=0;i<cumtimg;i++){
+				imgslide[i].style.display="none";
+				}	
+				imgslide[index - 1].style.display="block";				
+			}
+			slideimage();
+			function slideimage(){
+				var imgslide = $(".slideimg");
+                var cumtimg = imgslide.length;				
+				for(var i = 0; i<cumtimg; i++){
+					imgslide[i].style.display = "none";
+				 }
+				 if(index > cumtimg){
+					index = 1;
+				 }
+				 imgslide.eq(index - 1).fadeOut(6000).fadeIn(6000);
+				 $("#bslide").removeClass("bslide"+index);
+				 index++;
+				 $("#bslide").addClass("bslide"+index);
+				 if(index > cumtimg){
+					index = 1;
+					$("#bslide").addClass("bslide"+index);
+				 }
+				 setTimeout(slideimage,9000);				
+			}   
+		</script>
+		</div>

@@ -1,0 +1,64 @@
+
+<html>
+	<head>
+		<link rel="stylesheet" href="bootstrap.css"/>
+		<script src="jquery.js" type="text/javascript"></script>
+	</head>
+	<body>
+	
+		<div class="col-md-5">
+			<form id="formContent" method="post" action="" enctype="multipart/form-data">
+				<div class="form-group">
+					<div class="col-md-5">
+						<input id="filetoupload" type="file" class="form-control" name="filetoupload[]" multiple />
+					</div>
+				</div>
+				<input type="submit" class="btn btn-success btn-sm" value="upload" id="upload" name="upload"/>
+			</form>
+			<div id="showmsg"></div>
+			<img src="" width="200" height="200" id="showImg"/>
+			<script>
+				$(document).ready(function(){
+					$("#filetoupload").change(function(){
+						var formdata = new FormData();
+						var imgleng = this.files.length;
+						for(var i=0; i<imgleng; i++){
+							formdata.append("file"+i,this.files[i])
+						}
+						$.ajax({
+							url: "upload.php",
+							type: "POST",
+							mimeTypes: "multipart/form-data",
+							contentType: false,
+							processData: false,
+							cache: false,
+							data: formdata,
+							success: function(data){
+								alert(data);
+							}
+						});
+					});																				
+				});
+			</script>
+		</div>
+		<?php
+			if(isset($_POST[''])){
+				$ext = array("jpg","png","gif");
+				foreach($_FILES['filetoupload']['name'] as $key=>$val){
+					$name = basename($_FILES['filetoupload']['name'][$key]);
+					$tmpname = $_FILES['filetoupload']['tmp_name'][$key];
+					$targetdir = "images/".$name;
+					$path = strtolower(pathinfo($targetdir,PATHINFO_EXTENSION));
+					if(in_array($path,$ext)){
+						if(move_uploaded_file($tmpname,$targetdir)){
+							echo "Oploaded Successfully";
+						}else{
+							echo "Failed";
+						}
+					}else{
+						echo"File Format is not suppored";
+					}
+				}
+			}
+		?>
+</html>

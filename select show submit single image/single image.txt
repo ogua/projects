@@ -1,0 +1,50 @@
+<form id="formContent" method="post" action="" enctype="multipart/form-data">
+				<div class="form-group">
+					<div class="col-md-5">
+						<input id="filetoupload" type="file" class="form-control" name="filetoupload[]" multiple />
+					</div>
+				</div>
+				<input type="submit" class="btn btn-success btn-sm" value="upload" id="upload" name="upload"/>
+			</form>
+			<div id="showmsg"></div>
+			<img src="" width="200" height="200" id="showImg"/>
+			<script>
+				$(document).ready(function(){								
+					$("#filetoupload").change(function(){
+						showImages(this);
+					});
+					function showImages(input){
+						if(input.files && input.files[0]){
+							var imagetype = input.files[0].type;
+							var imageExt = ["image/jpeg","image/png","image/gif"];
+							if(!((imagetype==imageExt[0]) || (imagetype==imageExt[1]) || (imagetype==imageExt[2]) )){
+								alert("File is not a valid Image");
+							}else{
+								var reader = new FileReader();
+								reader.onload = function(e){
+									$("#showImg").attr("src",e.target.result);
+								}
+								reader.readAsDataURL(input.files[0]);
+							}
+							
+						}
+						
+					}
+					$("#formContent").submit(function(e){
+						e.preventDefault();
+						$.ajax({
+							url: "upload.php",
+							type: "POST",
+							mimeTypes: "multipart/form-data",
+							contentType: false,
+							processData: false,
+							cache: false,
+							data: new FormData(this),
+							success: function(data){
+								alert(data);
+							}
+						});
+					});
+				});
+			</script>
+		</div>
