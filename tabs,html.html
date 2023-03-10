@@ -1,0 +1,51 @@
+<!DO TYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Activating Bootstrap 3 Individual Tabs via JavaScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  <!-- Optional Bootstrap theme -->
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+</head>
+
+<body>
+<div class="row">
+<div class="col-sm-4">
+               <ul class="nav nav-tabs" id="myTab">
+																<li><a data-toggle="tab" href="#sectionA">Employee Information</a></li>
+																<li><a data-toggle="tab" href="#sectionB">Educational Background</a></li>
+																<li><a data-toggle="tab" href="#sectionC">Working Experience</a></li>
+																<li><a data-toggle="tab" href="#sectionD">Position/Compensation</a></li>
+												</ul>
+  </div>
+  <div class="col-sm-8">
+  <div class="tab-content">
+    <div id="sectionA" class="tab-pane fade in active">
+      <h3>Section A</h3>
+      <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+    </div>
+    <div id="sectionB" class="tab-pane fade">
+      <h3>Section B</h3>
+      <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+    </div>
+	<div id="sectionC" class="tab-pane fade">
+		<h1>good</h1>
+	</div>
+  </div>
+</div>
+</div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function()
+  {
+    $("#myTab li:eq(1) a").tab('show');
+  });
+  </script>
+
+</body>
+
+</html>
