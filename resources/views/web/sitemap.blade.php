@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+    <loc>https://www.stellajomo.com/home-welcome</loc>
+    <lastmod>2021-09-03T23:55:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+ <url>
+    <loc>https://www.stellajomo.com/about-us</loc>
+    <lastmod>2021-09-03T23:55:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.stellajomo.com/events</loc>
+    <lastmod>2021-09-03T23:55:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.stellajomo.com/audio</loc>
+    <lastmod>2021-09-03T23:55:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.stellajomo.com/photos-of-stella-jomo</loc>
+    <lastmod>2021-09-03T23:55:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.stellajomo.com/shop</loc>
+    <lastmod>2021-09-03T23:55:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.stellajomo.com/feeds</loc>
+    <lastmod>2021-09-03T23:55:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.stellajomo.com/contact-us</loc>
+    <lastmod>2021-09-03T23:55:42+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+   @foreach ($posts as $post)
+        <url> 
+            <loc>{{ route('eventid',['id' => $post->slug] )}}</loc>
+            <lastmod>{{ $post->created_at->tz('UTC')->toAtomString() }}</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    @endforeach
+</urlset>
